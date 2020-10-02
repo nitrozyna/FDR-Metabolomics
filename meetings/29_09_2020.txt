@@ -1,0 +1,16 @@
+The meeting was held for about an hour and was treated as an introduction to the problem. The meetings involved:
+
+	- discussion of the FRD paper (https://www.nature.com/articles/s41467-017-01318-5) and current approaches
+	- touching on the general scope of the project
+	- exposure to all the tools necessary for peak comparisons in MS data 
+
+Two questions that need to be answered while working on this project:
+	- can we do better target-decoy FDR if we can compare similarities in embedded space but not in real spectra
+A follow up questions:
+	- can we then be statistically smarter in how we compute decoys because of the much smarter space?
+
+Knock offs:
+We need to be able to show if we can generate decoys in the embedded space.
+
+Actions to take:
+Play with the data and explore Spec2Vec and MatchMS. Try to do a comparison of the first two methods present in the paper. Start with MatchMS codebase to be able to make the plots from the paper using LC/MS data.

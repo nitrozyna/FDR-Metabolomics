@@ -1,0 +1,39 @@
+# Timelog
+
+* PROJECT TITLE: (to be finalised) FDR target-decoy approach to compute similarieties of real metabolomic spectra and decoys using the Spec2Vec embeddings.
+* NAME: Malgorzata Kurkiewicz
+* STUDENT_ID: 2145411k
+* SUPERVISOR NAME: Simon Rogers
+
+## Guidance
+
+* This file contains the time log for your project. It will be submitted along with your final dissertation.
+* **YOU MUST KEEP THIS UP TO DATE AND UNDER VERSION CONTROL.**
+* This timelog should be filled out honestly, regularly (daily) and accurately. It is for *your* benefit.
+* Follow the structure provided, grouping time by weeks.  Quantise time to the half hour.
+
+## Week 0
+
+### 22 Sep 2020
+
+* *2 hours* Familiarised myself with biology concepts necessary for understanding metabolomic problems mentioned by the supervisor
+* *5 hours* Read the metabolomic papers provided by the supervisor and decided to pursue the FDR problem over LC/MS peak detection problem
+
+## Week 1
+
+## 29 Sep 2019
+
+* *1 hour* Meeting with supervisor
+* *2 hours* Wrote meeting minutes and created a plan for the week
+
+## 1 Oct 2020
+
+* *2 hour* Familirised myself with the concept of cosine similiraty score and Word2Vec approach
+* *4 hours* Read the main FDR paper and created notes with all the concepts that are new 
+
+## 2 Oct 2020
+
+* *3 hours* Continued on understanding the FDR metabolomic paper and looked at other student's available repo that approaches two main methods
+* *1 hour* Reorganised notes and created a GitHub repo with all the resources
+
+## Week 2
