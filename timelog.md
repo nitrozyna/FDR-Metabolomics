@@ -21,17 +21,17 @@
 
 ## Week 1
 
-## 29 Sep 2019
+### 29 Sep 2019
 
 * *1 hour* Meeting with supervisor
 * *2 hours* Wrote meeting minutes and created a plan for the week
 
-## 1 Oct 2020
+### 1 Oct 2020
 
 * *2 hour* Familirised myself with the concept of cosine similiraty score and Word2Vec approach
 * *4 hours* Read the main FDR paper and created notes with all the concepts that are new 
 
-## 2 Oct 2020
+### 2 Oct 2020
 
 * *3 hours* Continued on understanding the FDR metabolomic paper and looked at other student's available repo that approaches two main methods
 * *1 hour* Reorganised notes and created a GitHub repo with all the resources
