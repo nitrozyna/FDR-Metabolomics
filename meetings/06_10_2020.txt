@@ -1,9 +1,38 @@
 Questions before the meeting:
 
-- Github repo
 - Project Title and Description: 5th October 2020. I imagine it's entered in the system by now, could I get a copy?
 - Do I know what filters I need to apply to be able to process the data correctly? There are also methods for cleaning and correcting the given data, should I use them?
-- the LC/MS data is publishable
-- In order to find the best spec2vec score trial and error with increasing dimensions from one of the summer students was used, is there a better way of finding this out or do we know it already?
-- One of the stundets uses MoNA-export-GC-MS-first10.msp data? Where does it come from?
+- The LC/MS data is publishable
+- In order to find the best spec2vec score, trial and error with increasing dimensions from one of the summer students was used, is there an easier way and do you know what the best result is?
+- Efrain uses MoNA-export-GC-MS-first10.msp data? Where does it come from?
 - The LC/MS can be devided as a referance and training I imagine
+- After training I get this sort of output:
+Epoch 1 of 30.Change in loss after epoch 1: 18559.12109375
+Epoch 2 of 30.Change in loss after epoch 2: 18567.2421875
+
+Notes during the meeting:
+
+30 is a maximum limit that makes sure we obtain the optimal result. The result is saved at every iteration
+
+
+filter on precursor mass value 
+make sure the dimension we are using is at least as good (at least in 300 dimensions, the fewer the better)
+take top 1% spec2vec, cosine similarity and compare with structure similarity
+
+
+What should you do with the LC/MS data?
+small dataset (good size is 5000)
+inchikey has 14 digits and tells the structure next 9 its' stereo chemistry
+
+for each of the 100 queries there shoud be 1 in the reference
+
+first recognise 14 digits 
+
+if you see the molecule with the same aduct put it in the query
+
+Try to start on the introduction of the paper
+Draw what sort of figures we want to see
+Explore and understand what plots have been used (q plots) in the initial apper
+
+Simon will send a notebook with his initial FDR results and introduce me to the people in Netherlands
+

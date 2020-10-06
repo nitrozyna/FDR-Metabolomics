@@ -45,3 +45,5 @@
 ### 6 Oct 2020
 
 * *2.5 hours* Installed Spec2Vec, Created a notebook with an example dataset, analysed the data, prepared questions for the meeting with supervisor
+* *0.5 hour* Meeting with the supervisor, definining the plan for next week
+
