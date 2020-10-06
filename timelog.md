@@ -24,7 +24,7 @@
 ### 29 Sep 2019
 
 * *1 hour* Meeting with supervisor
-* *2 hours* Wrote meeting minutes and created a plan for the week
+* *2 hours* Wrote meeting minutes and created a plan for the upcoming weeks
 
 ### 1 Oct 2020
 
@@ -37,3 +37,11 @@
 * *1 hour* Reorganised notes and created a GitHub repo with all the resources
 
 ## Week 2
+
+### 5 Oct 2020
+
+* *1.5 hours* Updated Conda environment, installed MatchMS
+
+### 6 Oct 2020
+
+* *2.5 hours* Installed Spec2Vec, Created a notebook with an example dataset, analysed the data, prepared questions for the meeting with supervisor
