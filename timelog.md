@@ -47,3 +47,9 @@
 * *2.5 hours* Installed Spec2Vec, Created a notebook with an example dataset, analysed the data, prepared questions for the meeting with supervisor
 * *0.5 hour* Meeting with the supervisor, definining the plan for next week
 
+### 7 Oct 2020
+
+* *3 hours* More reading of FDR approaches in proteonomics, preparing to reproduce results from passatuto, downloaded the codebase and reorganised the data
+
+
+

@@ -32,7 +32,7 @@ if you see the molecule with the same aduct put it in the query
 
 Try to start on the introduction of the paper
 Draw what sort of figures we want to see
-Explore and understand what plots have been used (q plots) in the initial apper
+Explore and understand what plots have been used (q plots) in the initial paper
 
 Simon will send a notebook with his initial FDR results and introduce me to the people in Netherlands
 
