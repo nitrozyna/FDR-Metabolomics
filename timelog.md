@@ -51,5 +51,13 @@
 
 * *3 hours* More reading of FDR approaches in proteonomics, preparing to reproduce results from passatuto, downloaded the codebase and reorganised the data
 
+### 8 Oct 2020
+
+* *3 hours* Looked into the passatuto codebase, dived into other notebooks, prepared for parsing of passatuto data
+
+### 9 Oct 2020
+
+* *4 hours* Created a parser for passatuto data, emailed Justin and supervisor and decided to refine the approach for reproducing passatuto result
+
 
 
