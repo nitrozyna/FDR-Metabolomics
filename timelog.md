@@ -57,7 +57,7 @@
 
 ### 9 Oct 2020
 
-* *4 hours* Created a parser for passatuto data, emailed Justin and supervisor and decided to refine the approach for reproducing passatuto result
+* *4 hours* Created a parser for passatuto data, emailed Justin and supervisor and decided to refine the approach for reproducing passatuto results
 
 ### 10 Oct 2020
 
