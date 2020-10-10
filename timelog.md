@@ -59,5 +59,9 @@
 
 * *4 hours* Created a parser for passatuto data, emailed Justin and supervisor and decided to refine the approach for reproducing passatuto result
 
+### 10 Oct 2020
+
+* *1.5 hours* Read resources about mass spectrometry in metabolomics from Justin and Simon, talked to a mass spectrometry lecturer to clarify a few concepts
+
 
 
