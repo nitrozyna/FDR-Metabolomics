@@ -63,5 +63,6 @@
 
 * *1.5 hours* Read resources about mass spectrometry in metabolomics from Justin and Simon, talked to a mass spectrometry lecturer to clarify a few concepts
 
+### 11 Oct 2020
 
-
+* *1 hour* Read parts of the "Proteomics, lipidomics, metabolomics: a mass spectrometry tutorial from a computer scientist's point of view" by R. Smith et al
