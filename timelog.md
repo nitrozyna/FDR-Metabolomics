@@ -73,3 +73,7 @@
 
 * *1 hour* Went through the Github Gist tutorial on Word2Vec from Allison Parrish.
 
+### 13 Oct 2020
+
+* *3 hours* Organised papers in a new reference manager, made notes for "Proteomics, lipidomics, metabolomics: a mass spectrometry tutorial from a computer scientist's point of view" by R. Smith et al
+
