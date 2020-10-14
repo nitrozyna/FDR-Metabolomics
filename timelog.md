@@ -71,9 +71,13 @@
 
 ### 12 Oct 2020
 
-* *1 hour* Went through the Github Gist tutorial on Word2Vec from Allison Parrish.
+* *1 hour* Went through the Github Gist tutorial on Word2Vec from Allison Parrish
 
 ### 13 Oct 2020
 
 * *3 hours* Organised papers in a new reference manager, made notes for "Proteomics, lipidomics, metabolomics: a mass spectrometry tutorial from a computer scientist's point of view" by R. Smith et al
+
+### 14 Oct 2020
+
+* *0.5 hour* Started reading and creating a Level 2 summary of "Target-decoy search strategy for increased confidence in large-scale protein identifications by mass spectrometry" by J. E. Elias et al
 
