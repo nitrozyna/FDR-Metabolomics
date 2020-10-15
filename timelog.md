@@ -81,3 +81,7 @@
 
 * *0.5 hour* Started reading and creating a Level 2 summary of "Target-decoy search strategy for increased confidence in large-scale protein identifications by mass spectrometry" by J. E. Elias et al
 
+### 15 Oct 2020
+
+* *2 hours* Created a level 2 summary for "Target-decoy search strategy for increased confidence in large-scale protein identifications by mass spectrometry" by J. E. Elias et al
+
