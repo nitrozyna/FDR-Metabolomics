@@ -85,3 +85,5 @@
 
 * *2 hours* Created a level 2 summary for "Target-decoy search strategy for increased confidence in large-scale protein identifications by mass spectrometry" by J. E. Elias et al
 
+### 16 Oct 2020 
+* *2 hours* Created level 1 and level 2 summary for "Assigning Significance to Peptides Identified by Tandem Mass Spectrometry Using Decoy Databases" by Kall L et al.
