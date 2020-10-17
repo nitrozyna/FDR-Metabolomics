@@ -87,3 +87,6 @@
 
 ### 16 Oct 2020 
 * *2 hours* Created level 1 and level 2 summary for "Assigning Significance to Peptides Identified by Tandem Mass Spectrometry Using Decoy Databases" by Kall L et al.
+
+### 17 Oct 2020
+* *2 hours* Created level 2 summary for Spec2Vec paper.
