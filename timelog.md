@@ -86,7 +86,14 @@
 * *2 hours* Created a level 2 summary for "Target-decoy search strategy for increased confidence in large-scale protein identifications by mass spectrometry" by J. E. Elias et al
 
 ### 16 Oct 2020 
-* *2 hours* Created level 1 and level 2 summary for "Assigning Significance to Peptides Identified by Tandem Mass Spectrometry Using Decoy Databases" by Kall L et al.
+* *2 hours* Created level 1 and level 2 summary for "Assigning Significance to Peptides Identified by Tandem Mass Spectrometry Using Decoy Databases" by Kall L et al
 
 ### 17 Oct 2020
-* *2 hours* Created level 2 summary for Spec2Vec paper.
+* *2 hours* Created level 2 summary for "Spec2Vec: Improved mass spectral similarity scoring through learning of structural relationships" ny Huber F. et al
+
+### 18 Oct 2020
+* *2 hours* Started writing introduction, added more resources to the list.
+* *2 hours* First read of "Knockoffs for the Mass: New Feature Importance Statistics with False Discovery Guarantees" for general understanding bt Gimenez J R et al
+
+## Week 4
+
