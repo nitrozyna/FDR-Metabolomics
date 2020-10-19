@@ -97,3 +97,6 @@
 
 ## Week 4
 
+### 19 Oct 2020
+* *5 hours* Completed the introduction/literature review.
+
