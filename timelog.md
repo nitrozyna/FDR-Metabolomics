@@ -1,6 +1,6 @@
 # Timelog
 
-* PROJECT TITLE: (to be finalised) FDR target-decoy approach to compute similarieties of real metabolomic spectra and decoys using the Spec2Vec embeddings.
+* PROJECT TITLE: (to be finalised) FDR target-decoy approach to compute similarities of real metabolomic spectra and decoys using the Spec2Vec embeddings.
 * NAME: Malgorzata Kurkiewicz
 * STUDENT_ID: 2145411k
 * SUPERVISOR NAME: Simon Rogers
@@ -63,5 +63,40 @@
 
 * *1.5 hours* Read resources about mass spectrometry in metabolomics from Justin and Simon, talked to a mass spectrometry lecturer to clarify a few concepts
 
+### 11 Oct 2020
 
+* *1 hour* Read parts of the "Proteomics, lipidomics, metabolomics: a mass spectrometry tutorial from a computer scientist's point of view" by R. Smith et al
+
+## Week 3
+
+### 12 Oct 2020
+
+* *1 hour* Went through the Github Gist tutorial on Word2Vec from Allison Parrish
+
+### 13 Oct 2020
+
+* *3 hours* Organised papers in a new reference manager, made notes for "Proteomics, lipidomics, metabolomics: a mass spectrometry tutorial from a computer scientist's point of view" by R. Smith et al
+
+### 14 Oct 2020
+
+* *0.5 hour* Started reading and creating a Level 2 summary of "Target-decoy search strategy for increased confidence in large-scale protein identifications by mass spectrometry" by J. E. Elias et al
+
+### 15 Oct 2020
+
+* *2 hours* Created a level 2 summary for "Target-decoy search strategy for increased confidence in large-scale protein identifications by mass spectrometry" by J. E. Elias et al
+
+### 16 Oct 2020 
+* *2 hours* Created level 1 and level 2 summary for "Assigning Significance to Peptides Identified by Tandem Mass Spectrometry Using Decoy Databases" by Kall L et al
+
+### 17 Oct 2020
+* *2 hours* Created level 2 summary for "Spec2Vec: Improved mass spectral similarity scoring through learning of structural relationships" ny Huber F. et al
+
+### 18 Oct 2020
+* *2 hours* Started writing introduction, added more resources to the list.
+* *2 hours* First read of "Knockoffs for the Mass: New Feature Importance Statistics with False Discovery Guarantees" for general understanding bt Gimenez J R et al
+
+## Week 4
+
+### 19 Oct 2020
+* *5 hours* Completed the introduction/literature review
 
