@@ -4,6 +4,8 @@ Notes before the meeting:
 - Mention steps for next week
 
 Notes during the meeting:
-
+- q-value discussion: the best FDR for a given threshold
 
 Plan for next week:
+- Create a notebook recreating Scheubert at al. results
+- Play with the knockoff idea in anoter notebook
