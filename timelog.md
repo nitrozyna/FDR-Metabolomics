@@ -1,6 +1,6 @@
 # Timelog
 
-* PROJECT TITLE: (to be finalised) FDR target-decoy approach to compute similarities of real metabolomic spectra and decoys using the Spec2Vec embeddings.
+* PROJECT TITLE: Knockoff target-decoy approach to compute similarities of real metabolomic spectra and decoys using Spec2Vec embeddings.
 * NAME: Malgorzata Kurkiewicz
 * STUDENT_ID: 2145411k
 * SUPERVISOR NAME: Simon Rogers
@@ -99,4 +99,8 @@
 
 ### 19 Oct 2020
 * *5 hours* Completed the introduction/literature review
+
+### 20 Oct 2020
+* *2 hours* Tidied up the references in the literature review, prepared for the meeting with the supervisor
+* *0.5 hour* Meeting with the supervisor
 
