@@ -10,9 +10,9 @@ Week-by-week plan for the whole project. Update this as you go along.
 ## Winter semester
 
 * **Week 1** Set up a GitHub repo, read scientific literature provided by the supervisor
-* **Week 2** Play with the data sets given using Spec2Vec and MatchMS, understand the outcome of the work and draw it, prepare to write introduction
-* **Week 3** Recreate two methods from the main FDR paper
-* **Week 4**
+* **Week 2** Play with the data sets given using Spec2Vec and MatchMS, understand the outcome of the work and draw it, prepare to write an introduction/literature review
+* **Week 3** Create the literature review, organise your knowledge
+* **Week 4** Recreate two methods from the Scheubert et al. and play with the Knockoff FDR method
 * **Week 5**
 * **Week 6**
 * **Week 7**
