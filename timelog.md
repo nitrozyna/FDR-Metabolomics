@@ -104,3 +104,6 @@
 * *2 hours* Tidied up the references in the literature review, prepared for the meeting with the supervisor
 * *0.5 hour* Meeting with the supervisor
 
+### 21 Oct 2020
+* *0.5 hour* Compiled the Latex template for the Masters Project, added some bits to the intro.
+
