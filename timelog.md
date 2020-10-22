@@ -107,3 +107,5 @@
 ### 21 Oct 2020
 * *0.5 hour* Compiled the Latex template for the Masters Project, added some bits to the intro.
 
+### 22 Oct 2020
+* *0.5 hour* Tidied up notebooks and started the Passautto analysis notebook.
