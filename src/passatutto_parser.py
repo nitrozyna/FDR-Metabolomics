@@ -26,7 +26,14 @@ def parse_passatuto(ms_file):
         elif line.startswith(">collision"):
             peaks = True
         elif line.strip():
-            key, value = line[1:].strip().split(' ', 1)
+            try:
+                key, value = line[1:].strip().split(' ', 1)
+            except ValueError:
+                key = line[1:].strip()
+                value = 'N/A'
+            except Exception as e:
+                print(ms_file,line,e)
+                continue
             key = name_overwrites.get(key, key.lower())
             if key in cast_to:
                 value = cast_to[key](value)
