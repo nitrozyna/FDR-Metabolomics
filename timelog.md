@@ -112,3 +112,9 @@
 
 ### 24 Oct 2020
 * *1.5 hours* Corrected the passatutto parser and continued on the Passatutto analysis.
+
+### 25 Oct 2020
+* *2 hours* Created the Passautto q-value analysis
+* *3 hours* Started moving code outside of the notebook for better readability and reproducability
+
+## Week 5
