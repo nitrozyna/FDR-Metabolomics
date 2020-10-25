@@ -109,3 +109,6 @@
 
 ### 22 Oct 2020
 * *0.5 hour* Tidied up notebooks and started the Passautto analysis notebook.
+
+### 24 Oct 2020
+* *1.5 hours* Corrected the passatutto parser and continued on the Passatutto analysis.
