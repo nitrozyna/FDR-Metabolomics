@@ -120,4 +120,4 @@
 ## Week 5
 
 ### 26 Oct 2020
-* *1 hours* Created some questions for the meeting with supervisor and redesigned the data analysis pipeline.
+* *1 hour* Created some questions for the meeting with supervisor and redesigned the data analysis pipeline, prepared to present it to supervisor.
