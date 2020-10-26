@@ -118,3 +118,6 @@
 * *3 hours* Started moving code outside of the notebook for better readability and reproducability
 
 ## Week 5
+
+### 26 Oct 2020
+* *1 hours* Created some questions for the meeting with supervisor and redesigned the data analysis pipeline.
