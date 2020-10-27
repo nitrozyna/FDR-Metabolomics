@@ -114,10 +114,14 @@
 * *1.5 hours* Corrected the passatutto parser and continued on the Passatutto analysis.
 
 ### 25 Oct 2020
-* *2 hours* Created the Passautto q-value analysis
-* *3 hours* Started moving code outside of the notebook for better readability and reproducability
+* *2 hours* Created the Passautto q-value analysis.
+* *3 hours* Started moving code outside of the notebook for better readability and reproducability.
 
 ## Week 5
 
 ### 26 Oct 2020
 * *1 hour* Created some questions for the meeting with supervisor and redesigned the data analysis pipeline, prepared to present it to supervisor.
+
+### 27 Oct 2020
+* *0.5 hour* Meeting with supervisor
+* *0.5 hour* Defining the plan for next week.
