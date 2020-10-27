@@ -7,5 +7,12 @@ Following up question: Why do we choose two multis, one for query and one for li
 - MatchMs calculates Cosine in a Greedy way and using a Hungarian Algorithm? Is there any particular reason why we would use one over another?
 
 Notes during the meeting:
+match gnps (reference) with mass bank (query)
+create some code for q-plots
+create some code to parse each of their files after each of the steps in the pipeline
 
 Plan for next week:
+Work backwards:
+- Recreate the q-value plots by taking the q-values from the FDR paper
+- Try to calculate the q-values on your own from their data
+- recreate matching by comparing to their way of matching
