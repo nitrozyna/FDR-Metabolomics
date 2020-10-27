@@ -13,7 +13,7 @@ Week-by-week plan for the whole project. Update this as you go along.
 * **Week 2** Play with the data sets given using Spec2Vec and MatchMS, understand the outcome of the work and draw it, prepare to write an introduction/literature review
 * **Week 3** Create the literature review, organise your knowledge
 * **Week 4** Recreate two methods from the Scheubert et al. and play with the Knockoff FDR method
-* **Week 5**
+* **Week 5** Recreate two methods from the Scheubert et al. and play with the Knockoff FDR method
 * **Week 6**
 * **Week 7**
 * **Week 8**
