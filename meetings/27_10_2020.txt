@@ -1,0 +1,11 @@
+Notes before the meeting:
+- Why is there an additional filter to check if there is a fragment within N ppm of the precursor?
+- Metadata that lets us differenciate between spectrums is 'inchikey_inchi', is there any other unique metadata that lets us do that?
+- After separation of data into multiple spectrums that have the same inchikey and single spectrums that have the same inchikeys we do the random choice according to the query and library size.
+Does it matter what size we choose for each, isn't it the case that the bigger the better?
+Following up question: Why do we choose two multis, one for query and one for library? What would happen if we chose more for the query?
+- MatchMs calculates Cosine in a Greedy way and using a Hungarian Algorithm? Is there any particular reason why we would use one over another?
+
+Notes during the meeting:
+
+Plan for next week:
