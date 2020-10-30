@@ -125,3 +125,6 @@
 ### 27 Oct 2020
 * *0.5 hour* Meeting with supervisor
 * *0.5 hour* Defining the plan for next week.
+
+### 30 Oct 2020
+* *1.5 hours* Started recreating the q_value plots for Passatutto data
