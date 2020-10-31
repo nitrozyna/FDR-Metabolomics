@@ -25,10 +25,10 @@ class PassatuttoParser:
         peaks = False
         peaks_json = []
         for line in open(ms_file):
-            if peaks:
-                peaks_json.append(list(map(float, line.split())))
-            elif line.startswith(">collision"):
+            if line.startswith(">collision"):
                 peaks = True
+            elif peaks and line.strip():
+                peaks_json.append(list(map(float, line.split())))
             elif line.strip():
                 try:
                     key, value = line[1:].strip().split(' ', 1)
