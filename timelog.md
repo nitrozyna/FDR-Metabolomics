@@ -128,3 +128,6 @@
 
 ### 30 Oct 2020
 * *1.5 hours* Started recreating the q_value plots for Passatutto data
+
+### 31 Oct 2020
+* *3 hours* Tried to calculate true q_values, realised the Passatutto parser needs to be enhanced and dived deeper into that.
