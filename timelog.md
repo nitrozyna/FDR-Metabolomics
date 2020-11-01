@@ -131,3 +131,6 @@
 
 ### 31 Oct 2020
 * *3 hours* Tried to calculate true q_values, realised the Passatutto parser needs to be enhanced and dived deeper into that.
+
+### 1 Nov 2020
+* *3 hours* Continued trying to recreate Passautto q values.
