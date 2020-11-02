@@ -1,0 +1,20 @@
+Notes before the meeting:
+- Where can I get Agilent data, should I care about it?
+- Why do we obtain cosine similarity score equal to 0 where the compounds are the same?
+- For the MassBank data there are multiple collisions per file. How do we interpret it?
+
+final outcome: find if it's a true or false hit:
+
+1. take the query name from the file with cosine scores and the inchi key of the target
+2. by looking at the query name in the query file, compare the inchi key of the query to the target from step 1
+3. if inchi key is the same then it's a true hit, otherwise it's not
+
+1.1 cut the target inchi key in a way that it has only digits and letters until first "/"
+2.1 do the same as step 1.1 for the inchi in the query
+
+Notes during the meeting:
+
+
+Plan for next week:
+
+
