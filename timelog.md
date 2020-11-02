@@ -134,3 +134,8 @@
 
 ### 1 Nov 2020
 * *3 hours* Continued trying to recreate Passautto q values.
+
+## Week 6
+
+### 2 Nov 2020
+* *3 hours* Continued trying to recreate Passautto q values, still no luck but seeing the main differences.
