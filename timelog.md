@@ -123,14 +123,14 @@
 * *1 hour* Created some questions for the meeting with supervisor and redesigned the data analysis pipeline, prepared to present it to supervisor.
 
 ### 27 Oct 2020
-* *0.5 hour* Meeting with supervisor
+* *0.5 hour* Meeting with supervisor.
 * *0.5 hour* Defining the plan for next week.
 
 ### 30 Oct 2020
-* *1.5 hours* Started recreating the q_value plots for Passatutto data
+* *1.5 hours* Started recreating the q_value plots for Passatutto data.
 
 ### 31 Oct 2020
-* *3 hours* Tried to calculate true q_values, realised the Passatutto parser needs to be enhanced and dived deeper into that.
+* *3 hours* Tried to calculate true q-values, realised the Passatutto parser needs to be enhanced and dived deeper into that.
 
 ### 1 Nov 2020
 * *3 hours* Continued trying to recreate Passautto q values.
@@ -139,3 +139,7 @@
 
 ### 2 Nov 2020
 * *3 hours* Continued trying to recreate Passautto q values, still no luck but seeing the main differences.
+
+### 3 Nov 2020
+* *1 hour* Prepared for the meeting wirh supervisor by making notes and reorganising the notebook to show some results.
+* *0.5 hour* Meeting with supervisor.
