@@ -143,3 +143,6 @@
 ### 3 Nov 2020
 * *1 hour* Prepared for the meeting wirh supervisor by making notes and reorganising the notebook to show some results.
 * *0.5 hour* Meeting with supervisor.
+
+### 4 Nov 2020
+* *2 hours* Changed inchi comparison method a few times, q values still differ from the Passatutto results.
