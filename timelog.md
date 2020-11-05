@@ -146,3 +146,6 @@
 
 ### 4 Nov 2020
 * *2 hours* Changed inchi comparison method a few times, q values still differ from the Passatutto results.
+
+### 5 Nov 2020
+* *1 hour* Reorganised the Passatutto notebook included additional information so that it's easier to recreate.
