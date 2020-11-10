@@ -15,7 +15,7 @@ Week-by-week plan for the whole project. Update this as you go along.
 * **Week 4** Recreate two methods from the Scheubert et al. and play with the Knockoff FDR method
 * **Week 5** Recreate two methods from the Scheubert et al. and play with the Knockoff FDR method
 * **Week 6** Recreate two methods from the Scheubert et al.
-* **Week 7**
+* **Week 7** Create a general pipeline for calculating q-values given mass spec query and target data
 * **Week 8**
 * **Week 9**
 * **Week 10**
