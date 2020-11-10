@@ -14,7 +14,7 @@ final outcome: find if it's a true or false hit:
 
 Notes during the meeting:
 
-Cosine ismiliraty can be equal to 0 when the compounds are the same, it's a matter of having noisy data and broken mass specs.
+Cosine similiraty can be equal to 0 when the compounds are the same, it's a matter of having noisy data and broken mass specs.
 Mulitple collisions per file are merged all together in MatchMS.
 
 Plan for next week:
