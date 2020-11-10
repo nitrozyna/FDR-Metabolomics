@@ -149,3 +149,10 @@
 
 ### 5 Nov 2020
 * *1 hour* Reorganised the Passatutto notebook included additional information so that it's easier to recreate.
+
+## Week 7
+
+### 11 Nov 2020
+* *1 hour* Prepared for the meeting wirh supervisor by creating some questions.
+* *0.5 hour* Meeting with supervisor.
+* *1.5 hours* Worked on creation of the general pipelines we talked about on the meeting.
