@@ -156,3 +156,6 @@
 * *1 hour* Prepared for the meeting wirh supervisor by creating some questions.
 * *0.5 hour* Meeting with supervisor.
 * *1.5 hours* Worked on creation of the general pipelines we talked about on the meeting.
+
+### 14 Nov 2020
+*6 hours* Created parts of the pipeline, encountered a few problems, still have some bugs.
