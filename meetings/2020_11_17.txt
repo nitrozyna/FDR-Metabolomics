@@ -1,0 +1,8 @@
+Adduct is usually:
+[M+H]+
+but sometimes it's:
+[M+Na]+
+[M+H-H2O]+
+There shouldn't be any difference though
+
+For queries, very often we have a None instead of an adduct, should I filter those out? around 60/450
