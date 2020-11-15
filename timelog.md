@@ -159,3 +159,6 @@
 
 ### 14 Nov 2020
 *6 hours* Created parts of the pipeline, encountered a few problems, still have some bugs.
+
+### 15 Nov 2020
+*4 hours* Finished the pipeline with cosine similarity, moved parts of the notebook to the python pipeline.
