@@ -1,3 +1,6 @@
+
+Notes before the meeting:
+
 Adduct is usually:
 [M+H]+
 but sometimes it's:
@@ -6,3 +9,8 @@ but sometimes it's:
 There shouldn't be any difference though
 
 For queries, very often we have a None instead of an adduct, should I filter those out? around 60/450
+
+I filtered queries from query spectra that didn't have a parent mass
+
+https://metabolomics-usi.ucsd.edu/mirror?usi1=mzspec:MASSBANK::accession:NA001378&usi2=mzspec:GNPS:GNPS-LIBRARY:accession:CCMSLIB00000079576&width=10.0&height=6.0&mz_min=&mz_max=&max_intensity=150.0&grid=true&annotate_peaks=[[119.0352,136.0617],[136.0614,810.889,1056.7943]]&annotate_precision=4&annotation_rotation=90&cosine=standard&fragment_mz_tolerance=0.02
+https://metabolomics-usi.ucsd.edu/mirror?usi1=mzspec:MASSBANK::accession:EA282407&usi2=mzspec:GNPS:GNPS-LIBRARY:accession:CCMSLIB00000084759&width=10.0&height=6.0&mz_min=&mz_max=&max_intensity=150.0&grid=true&annotate_peaks=[[121.0648,147.0804,159.0804,171.0805,198.1039,213.1272],[171.0819,272.2025]]&annotate_precision=4&annotation_rotation=90&cosine=standard&fragment_mz_tolerance=0.02

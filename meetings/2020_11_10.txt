@@ -1,7 +1,7 @@
 Notes during the meeting and plan for next week:
 
 parent mass differs by certain amount
-precursor_amass _ms in gnps
+precursor_mass _ms in gnps
 parent_mass in massbankorbi
 search through two daltons or one dalton, just print and see what happens
 use rdkit to compute exact mass
