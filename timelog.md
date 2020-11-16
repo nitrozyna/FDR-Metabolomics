@@ -162,3 +162,8 @@
 
 ### 15 Nov 2020
 *4 hours* Finished the pipeline with cosine similarity, moved parts of the notebook to the python pipeline.
+
+## Week 8
+
+### 16 Nov 202
+*2 hours* Updated some meeting notes with progress of compound comparisons, extracted two of the relevant compounds, started the notebook with cosine comparisons and grid search.
