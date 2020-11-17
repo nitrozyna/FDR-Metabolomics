@@ -165,5 +165,10 @@
 
 ## Week 8
 
-### 16 Nov 202
+### 16 Nov 2020
 *2 hours* Updated some meeting notes with progress of compound comparisons, extracted two of the relevant compounds, started the notebook with cosine comparisons and grid search.
+
+### 17 Nov 2020
+*1.5 hours* Prepared for the meeting with supervisor, introduced grid search to the basic pipeline notebook.
+*0.5 hour* Meeting with supervisor.
+*2 hours* Updated notebooks and cosine similarity functions.
