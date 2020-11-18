@@ -172,3 +172,6 @@
 *1.5 hours* Prepared for the meeting with supervisor, introduced grid search to the basic pipeline notebook.
 *0.5 hour* Meeting with supervisor.
 *2 hours* Updated notebooks and cosine similarity functions.
+
+### 18 Nov 2020
+*1 hour* Reread the Kall et al. paper to be able to approach decoy FDR calculation
