@@ -175,3 +175,6 @@
 
 ### 18 Nov 2020
 *1 hour* Reread the Kall et al. paper to be able to approach decoy FDR calculation
+
+### 21 2020
+*2 hours* Planned exactly each step of the pipeline: creating decoy database, p-value calc, FDR, q-value calc and plots.
