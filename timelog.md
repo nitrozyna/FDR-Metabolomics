@@ -111,7 +111,7 @@
 * *0.5 hour* Tidied up notebooks and started the Passautto analysis notebook.
 
 ### 24 Oct 2020
-* *1.5 hours* Corrected the passatutto parser and continued on the Passatutto analysis.
+* *1.5 hours* Corrected the passatuto parser and continued on the Passatuto analysis.
 
 ### 25 Oct 2020
 * *2 hours* Created the Passautto q-value analysis.
@@ -127,10 +127,10 @@
 * *0.5 hour* Defining the plan for next week.
 
 ### 30 Oct 2020
-* *1.5 hours* Started recreating the q_value plots for Passatutto data.
+* *1.5 hours* Started recreating the q_value plots for Passatuto data.
 
 ### 31 Oct 2020
-* *3 hours* Tried to calculate true q-values, realised the Passatutto parser needs to be enhanced and dived deeper into that.
+* *3 hours* Tried to calculate true q-values, realised the Passatuto parser needs to be enhanced and dived deeper into that.
 
 ### 1 Nov 2020
 * *3 hours* Continued trying to recreate Passautto q values.
@@ -145,10 +145,10 @@
 * *0.5 hour* Meeting with supervisor.
 
 ### 4 Nov 2020
-* *2 hours* Changed inchi comparison method a few times, q values still differ from the Passatutto results.
+* *2 hours* Changed inchi comparison method a few times, q values still differ from the Passatuto results.
 
 ### 5 Nov 2020
-* *1 hour* Reorganised the Passatutto notebook included additional information so that it's easier to recreate.
+* *1 hour* Reorganised the Passatuto notebook included additional information so that it's easier to recreate.
 
 ## Week 7
 
@@ -174,7 +174,12 @@
 *2 hours* Updated notebooks and cosine similarity functions.
 
 ### 18 Nov 2020
-*1 hour* Reread the Kall et al. paper to be able to approach decoy FDR calculation
+*1 hour* Reread the Kall et al. paper to be able to approach decoy FDR calculation.
 
-### 21 2020
+### 21 Nov 2020
 *2 hours* Planned exactly each step of the pipeline: creating decoy database, p-value calc, FDR, q-value calc and plots.
+
+## Week 9
+
+### 23 Nov 2020
+*6 hours* Finished the estimated and true q-value calculation for Passatuto data.
