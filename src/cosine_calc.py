@@ -2,16 +2,17 @@ from matchms.similarity import CosineGreedy
 from rdkit.Chem.inchi import InchiToInchiKey, MolToInchiKey
 import bisect
 from collections import namedtuple
+import numpy as np
 
 Hit = namedtuple('Hit', ['query', 'target', 'score', 'hit'])
 
 
 def inchis_equal(s1, s2):
-    return s1.metadata['inchi'].split("/")[:4] == s2.metadata['inchi'].split("/")[:4]
+    return s1.metadata.get('inchi',"").split("/")[:4] == s2.metadata.get('inchi', "").split("/")[:4]
     # return InchiToInchiKey(s1.metadata['inchi']).split('-')[0] == InchiToInchiKey(s2.metadata['inchi']).split('-')[0]
 
 
-def get_hits(query_spec, library_spec, precursor_tol=1, metaKey='parent_mass', cosine_tol=0.1):
+def get_hits(query_spec, library_spec, precursor_tol=1, metaKey='parent_mass', cosine_tol=0.1, decoys=False, include_impossible_hits=True):
     cosine_greedy = CosineGreedy(tolerance=cosine_tol)
     library_spec.sort(key=lambda x: x.metadata[metaKey])
     hits = []
@@ -30,21 +31,29 @@ def get_hits(query_spec, library_spec, precursor_tol=1, metaKey='parent_mass', c
             # nothing in precursor range
             misses.append(q)
         else:
-            found = False
+            found = decoys
             scores = []
             for l in library_spec[pos:pos2]:
                 if inchis_equal(q, l):
                     found = True
                 s, _ = cosine_greedy.pair(q, l)
+                if s != s:
+                    print('got nan for', q.get('compound_name'))
+                    continue
                 scores.append((s, l))
             # if all( s[0] == 0.0 for s in scores ):
             #    print(q.get('compound_name'))
+            scores.sort(key=lambda x: x[0], reverse=True)
+            score, target = scores[0]
             if found:
-                scores.sort(key=lambda x: x[0], reverse=True)
-                # query, target, best cosine score, hit_true
-                hits.append(Hit(q, scores[0][1], scores[0][0], inchis_equal(q, scores[0][1])))
+                if decoys:
+                    hits.append(Hit(q, target, score, 'decoy'))
+                else:
+                    hits.append(Hit(q, target, score, inchis_equal(q, scores[0][1])))
             else:
                 misses.append(q)
+                if include_impossible_hits:
+                    hits.append(Hit(q, target, score, False))
     return hits, misses
 
 

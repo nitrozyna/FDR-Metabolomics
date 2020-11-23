@@ -2,12 +2,15 @@ from collections import namedtuple
 QVal = namedtuple('QVal', ['qval', 'hit', 'score'])
 
 
-def calculate_q_value(hits):
+def calculate_q_value(hits,decoys=False):
     hits.sort(key=lambda x: x.score, reverse=True)
     fdr_vals = []
     for i in range(len(hits)):
         #calculate the proportion of false hits so far
-        fdr = sum([int(not h.hit) for h in hits[:i+1]])/(i+1)
+        if decoys:
+            fdr = sum([int(h.hit == 'decoy') for h in hits[:i+1]])/(i+1)
+        else:
+            fdr = sum([int(not h.hit) for h in hits[:i+1]])/(i+1)
         fdr_vals.append(fdr)
     q_vals = [0 for f in fdr_vals]
     q_vals[-1] = fdr_vals[-1]

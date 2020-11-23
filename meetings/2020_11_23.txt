@@ -1,0 +1,2 @@
+Notes before the meeting:
+For the deciys, we do not have parent mass to compare to but we have precurser_mz. Can we caclculate cosine similarity comparing query parent_mass and precursor_mz from decoys?
