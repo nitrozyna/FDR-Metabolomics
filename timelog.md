@@ -158,32 +158,32 @@
 * *1.5 hours* Worked on creation of the general pipelines we talked about on the meeting.
 
 ### 14 Nov 2020
-*6 hours* Created parts of the pipeline, encountered a few problems, still have some bugs.
+* *6 hours* Created parts of the pipeline, encountered a few problems, still have some bugs.
 
 ### 15 Nov 2020
-*4 hours* Finished the pipeline with cosine similarity, moved parts of the notebook to the python pipeline.
+* *4 hours* Finished the pipeline with cosine similarity, moved parts of the notebook to the python pipeline.
 
 ## Week 8
 
 ### 16 Nov 2020
-*2 hours* Updated some meeting notes with progress of compound comparisons, extracted two of the relevant compounds, started the notebook with cosine comparisons and grid search.
+* *2 hours* Updated some meeting notes with progress of compound comparisons, extracted two of the relevant compounds, started the notebook with cosine comparisons and grid search.
 
 ### 17 Nov 2020
-*1.5 hours* Prepared for the meeting with supervisor, introduced grid search to the basic pipeline notebook.
-*0.5 hour* Meeting with supervisor.
-*2 hours* Updated notebooks and cosine similarity functions.
+* *1.5 hours* Prepared for the meeting with supervisor, introduced grid search to the basic pipeline notebook.
+* *0.5 hour* Meeting with supervisor.
+* *2 hours* Updated notebooks and cosine similarity functions.
 
 ### 18 Nov 2020
-*1 hour* Reread the Kall et al. paper to be able to approach decoy FDR calculation.
+* *1 hour* Reread the Kall et al. paper to be able to approach decoy FDR calculation.
 
 ### 21 Nov 2020
-*2 hours* Planned exactly each step of the pipeline: creating decoy database, p-value calc, FDR, q-value calc and plots.
+* *2 hours* Planned exactly each step of the pipeline: creating decoy database, p-value calc, FDR, q-value calc and plots.
 
 ## Week 9
 
 ### 23 Nov 2020
-*6 hours* Finished the estimated and true q-value calculation for Passatuto data.
+* *6 hours* Finished the estimated and true q-value calculation for Passatuto data.
 
 ### 24 Nov 2020
-*0.5 hour* Prepared for meeting with supervisor.
-*0.5 hour* Meeting with supervisor.
+* *0.5 hour* Prepared for meeting with supervisor.
+* *0.5 hour* Meeting with supervisor.
