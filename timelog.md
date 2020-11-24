@@ -183,3 +183,7 @@
 
 ### 23 Nov 2020
 *6 hours* Finished the estimated and true q-value calculation for Passatuto data.
+
+### 24 Nov 2020
+*0.5 hour* Prepared for meeting with supervisor.
+*0.5 hour* Meeting with supervisor.
