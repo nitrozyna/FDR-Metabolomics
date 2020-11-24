@@ -1,2 +1,15 @@
 Notes before the meeting:
-For the deciys, we do not have parent mass to compare to but we have precurser_mz. Can we caclculate cosine similarity comparing query parent_mass and precursor_mz from decoys?
+For the decoys, we do not have parent mass to compare to but we have precurser_mz. Can we caclculate cosine similarity comparing query parent_mass and precursor_mz from decoys?
+
+Notes during the meeting:
+
+take database, embed
+take query, embed
+compute similarity
+
+take pretrained spec2vec model
+take their target data -> embed it
+same for decoy
+
+
+
