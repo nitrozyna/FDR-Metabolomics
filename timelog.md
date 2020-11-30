@@ -187,3 +187,12 @@
 ### 24 Nov 2020
 * *0.5 hour* Prepared for meeting with supervisor.
 * *0.5 hour* Meeting with supervisor.
+
+### 26 Nov 2020
+* *5 hours* Read a paper from Wang et al. "Target-decoy Based False Discovery Rate Estimation for Large scale Metabolite Identification" and created a Level 3 Summary.
+
+## Week 10
+
+### 30 Nov 2020
+* *2 hours* Played with Spec2Vec, read documentation and preprint to prepare for coding up the Spec2Vec model.
+* *6 hours* Coded up the Spec2Vec model with a pretrained dataset.
