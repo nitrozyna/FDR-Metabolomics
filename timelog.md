@@ -197,6 +197,10 @@
 * *2 hours* Played with Spec2Vec, read documentation and preprint to prepare for coding up the Spec2Vec model.
 * *6 hours* Coded up the Spec2Vec model with a pretrained dataset.
 
+### 01 Dec 2020
+* *0.5 hours* Meeting with the supervisor.
+* *0.5 hours* Organised notes after the meeting.
+
 ## Week 11
 
 ### 07 Dec 2020
