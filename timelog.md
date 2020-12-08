@@ -196,3 +196,9 @@
 ### 30 Nov 2020
 * *2 hours* Played with Spec2Vec, read documentation and preprint to prepare for coding up the Spec2Vec model.
 * *6 hours* Coded up the Spec2Vec model with a pretrained dataset.
+
+## Week 11
+
+### 07 Dec 2020
+* *4 hours* Read "Knockoffs for the Mass: New Feature Importance Statistics with False Discovery Guarantees" by Gimenez et al.
+
