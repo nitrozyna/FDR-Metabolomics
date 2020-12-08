@@ -206,3 +206,16 @@
 ### 07 Dec 2020
 * *4 hours* Read "Knockoffs for the Mass: New Feature Importance Statistics with False Discovery Guarantees" by Gimenez et al.
 
+### 08 Dec 2020
+* *1 hour* Read "Knockoffs for the Mass: New Feature Importance Statistics with False Discovery Guarantees" by Gimenez et al. 
+* *0.5 hours* Made a plan for writing up knockoffs.
+* *2 hours* Played with training a model for Spec2Vec.
+* *2 hours* Played with dimentionality.
+* *1 hour* Started on the status report.
+
+
+
+
+
+
+
