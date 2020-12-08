@@ -16,10 +16,10 @@ Week-by-week plan for the whole project. Update this as you go along.
 * **Week 5** Recreate two methods from the Scheubert et al. and play with the Knockoff FDR method
 * **Week 6** Recreate two methods from the Scheubert et al.
 * **Week 7** Create a general pipeline for calculating q-values given mass spec query and target data
-* **Week 8**
-* **Week 9**
-* **Week 10**
-* **Week 11 [PROJECT WEEK]**
+* **Week 8** Create a general pipeline for calculating q-values given mass spec query and target data
+* **Week 9** Train Spec2Vec Model and incorporate it inside the current pipeline.
+* **Week 10** Train Spec2Vec Model and incorporate it inside the current pipeline.
+* **Week 11 [PROJECT WEEK]** Incorporate the Knockoffs into the current pipeline
 * **Week 12 [PROJECT WEEK]** Status report submitted.
 
 ## Winter break
