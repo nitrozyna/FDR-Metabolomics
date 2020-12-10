@@ -217,7 +217,8 @@
 * *3 hours* Continued writing the status report.
 * *4 hour* Trying to understand the knockoff procedure further by reading statistics resources and other students code.
 
-
-
-
+### 10 Dec 2020
+* *3 hours* Continued writing the status report.
+* *2 hour* Trying to understand the knockoff procedure further by reading statistics resources.
+* *0.5 hour* Prepared for the meeting with supervisor.
 
