@@ -222,3 +222,8 @@
 * *2 hour* Trying to understand the knockoff procedure further by reading statistics resources.
 * *0.5 hour* Prepared for the meeting with supervisor.
 
+### 11 Dec 2020
+* *0.5 hours* Meeting with supervisor.
+* *0.5 hour* Organised meeting notes and defined the plan of work.
+* *4 hours* Finished writing the status report.
+* *1 hour* Moved the status report to latex, organised references and formatting
