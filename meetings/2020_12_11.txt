@@ -1,0 +1,11 @@
+Notes before the meeting:
+Are there any statistical resources to understand knockoffs better?
+Status report and a few questions on the plan for the project.
+
+Notes during the meeting:
+
+Define 2 dimentional Gaussian with mean and covariance, take the formula from the knockoff paper
+Plot where the knockoff is coming from and when the actual vector is coming from.
+
+When definiting the most optimal dimensions for Spec2Vec, plot true positives false positives, how the plot differes.
+

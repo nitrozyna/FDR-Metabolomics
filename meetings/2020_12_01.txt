@@ -1,0 +1,4 @@
+Plan for next week:
+
+Read the knockoff paper, try to understand the formulas, play around with it.
+Start thinking about incorporating GC/MS datasets.
