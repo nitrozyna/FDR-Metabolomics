@@ -228,6 +228,14 @@
 * *4 hours* Finished writing the status report.
 * *1 hour* Moved the status report to latex, organised references and formatting
 
-### 15
-Dec 2020
+## Week 12
+
+### 15 Dec 2020
 * *1 hour* Extended status report by adding statistical methods for measuring success in this project.
+
+### 16 Dec 2020
+* *3 hours* Added background knowledge to the status report, extended the aim section.
+* *2 hours* Read the "Deep Knockoffs" by Romano Y. et al.
+* *1 hours* Clarified some statistical concepts.
+* *2 hours* Prepared a mathematical model and listed necessary libraries to be able to implement knockoffs appropriately.
+
