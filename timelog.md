@@ -242,3 +242,9 @@
 ### 17 Dec 2020
 * *5 hours* Programmed knockoffs with an unsuccessful result.
 * *2 hours* Tried to change various parameters like the number of components or dimensions, no luck.
+
+### 18 Dec 2020
+* *1 hour* Prepared for meeting with supervisor.
+* *0.5 hour* Meeting with supervisor.
+
+
