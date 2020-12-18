@@ -239,3 +239,6 @@
 * *1 hours* Clarified some statistical concepts.
 * *2 hours* Prepared a mathematical model and listed necessary libraries to be able to implement knockoffs appropriately.
 
+### 17 Dec 2020
+* *5 hours* Programmed knockoffs with an unsuccessful result.
+* *2 hours* Tried to change various parameters like the number of components or dimensions, no luck.
