@@ -1,0 +1,8 @@
+Before the meeting:
+- present your knockoffs
+
+Notes during the meeting:
+- don't worry about creating knockoffs for spectra, try to recreate knockoffs for general vectors only in 2D space
+
+Plan after the Christmas break:
+- Simon will send you his approach to knockoffs in 2D
