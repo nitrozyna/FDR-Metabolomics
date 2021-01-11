@@ -1,0 +1,3 @@
+Notes before the meeting:
+
+covariances and variances
