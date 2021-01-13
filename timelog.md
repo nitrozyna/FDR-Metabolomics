@@ -252,5 +252,9 @@
 * *1.5 hour* Started the notebook with creating knock-offs from spectra.
 
 ## Week 13
+
+### 11 Jan 2021
 * *3 hours* Moved the 2D knockoff model to embedded spectra.
 
+### 13 Jan 2021
+* *2 hours* Tweaked the knockoff model a little bit and adjusted it to more dimensions.
