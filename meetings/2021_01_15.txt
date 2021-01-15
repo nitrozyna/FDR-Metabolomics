@@ -1,3 +1,20 @@
 Notes before the meeting:
 
-covariances and variances
+How many knockoffs do we want to generate from a single spectrum. In this scenario do we generate one instead od 50?
+Do we need the second randomisation step if we produce only one knockoff?
+
+Discuss dimensionality and what else do we need in the pipeline?
+
+
+Notes during the meeting:
+
+We want to generate a single knock off.
+
+Fit a gaussian mixture, get sigma and mu (there will be k gaussians for k vectors)
+
+Take a corresponding Gaussian to generate knockoffs.
+
+No need to know how to optimize D further just yet,
+
+Look for the notebook that Florian has done with red curve, black curve ( comparison of spec2vec to cosine), amount of true positives.
+This notebook will helo you in defining demensions.
