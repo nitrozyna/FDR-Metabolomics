@@ -258,3 +258,8 @@
 
 ### 13 Jan 2021
 * *2 hours* Tweaked the knockoff model a little bit and adjusted it to more dimensions.
+
+### 15 Jan 2021
+* *0.5 hours* Meeting with supervisor.
+* *0.5 hours* Organised the meeting notes and revised the plan for next week.
+* *1 hour* Experimented with fitting a GMM to the spectral vectors.
