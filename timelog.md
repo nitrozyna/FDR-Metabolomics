@@ -263,3 +263,6 @@
 * *0.5 hours* Meeting with supervisor.
 * *0.5 hours* Organised the meeting notes and revised the plan for next week.
 * *1 hour* Experimented with fitting a GMM to the spectral vectors.
+
+### 17 Jan 2021
+* *2 hours* Fitted a GMM for each spectrum vector and created a process for multiple knockoff creation given multiple spectra.
