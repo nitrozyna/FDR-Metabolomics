@@ -2,27 +2,36 @@ from matchms.similarity import CosineGreedy
 from rdkit.Chem.inchi import InchiToInchiKey, MolToInchiKey
 import bisect
 from collections import namedtuple
+from spec2vec import Spec2Vec
 import numpy as np
 
 Hit = namedtuple('Hit', ['query', 'target', 'score', 'hit'])
 
 
-def inchis_equal(s1, s2):
-    return s1.metadata.get('inchi',"").split("/")[:4] == s2.metadata.get('inchi', "").split("/")[:4]
+def inchis_equal(s1, s2,spec2vec=False):
+    return getMeta(s1,spec2vec).get('inchi',"").split("/")[:4] == getMeta(s2,spec2vec).get('inchi', "").split("/")[:4]
     # return InchiToInchiKey(s1.metadata['inchi']).split('-')[0] == InchiToInchiKey(s2.metadata['inchi']).split('-')[0]
 
+def getMeta(spec, spec2vec=False):
+    if spec2vec:
+        return spec._obj.metadata
+    else:
+        return spec.metadata
 
-def get_hits(query_spec, library_spec, precursor_tol=1, metaKey='parent_mass', cosine_tol=0.1, decoys=False, include_impossible_hits=True):
-    cosine_greedy = CosineGreedy(tolerance=cosine_tol)
-    library_spec.sort(key=lambda x: x.metadata[metaKey])
+def get_hits(query_spec, library_spec, precursor_tol=1, metaKey='parent_mass', cosine_tol=0.1, decoys=False, include_impossible_hits=True, spec2vec_model=None):
+    if spec2vec_model is not None:
+        similarity_measure = Spec2Vec(spec2vec_model)
+    else:
+        similarity_measure = CosineGreedy(tolerance=cosine_tol)
+    library_spec.sort(key=lambda x: getMeta(x,spec2vec_model)[metaKey])
     hits = []
     misses = []
-    library_prec_list = [x.metadata[metaKey] for x in library_spec]
+    library_prec_list = [getMeta(x,spec2vec_model)[metaKey] for x in library_spec]
     for q in query_spec:
-        if metaKey not in q.metadata:
+        if metaKey not in getMeta(q,spec2vec_model):
             continue
-        min_mz = q.metadata[metaKey] - precursor_tol
-        max_mz = q.metadata[metaKey] + precursor_tol
+        min_mz = getMeta(q,spec2vec_model)[metaKey] - precursor_tol
+        max_mz = getMeta(q,spec2vec_model)[metaKey] + precursor_tol
         pos = bisect.bisect_right(library_prec_list, min_mz)
         pos2 = pos
         while pos2 < len(library_prec_list) and library_prec_list[pos2] < max_mz:
@@ -34,9 +43,12 @@ def get_hits(query_spec, library_spec, precursor_tol=1, metaKey='parent_mass', c
             found = decoys
             scores = []
             for l in library_spec[pos:pos2]:
-                if inchis_equal(q, l):
+                if inchis_equal(q, l, spec2vec_model):
                     found = True
-                s, _ = cosine_greedy.pair(q, l)
+                if spec2vec_model:
+                    s = similarity_measure.pair(q, l)
+                else:
+                    s, _ = similarity_measure.pair(q, l)
                 if s != s:
                     print('got nan for', q.get('compound_name'))
                     continue
@@ -49,7 +61,7 @@ def get_hits(query_spec, library_spec, precursor_tol=1, metaKey='parent_mass', c
                 if decoys:
                     hits.append(Hit(q, target, score, 'decoy'))
                 else:
-                    hits.append(Hit(q, target, score, inchis_equal(q, scores[0][1])))
+                    hits.append(Hit(q, target, score, inchis_equal(q, scores[0][1], spec2vec_model)))
             else:
                 misses.append(q)
                 if include_impossible_hits:
