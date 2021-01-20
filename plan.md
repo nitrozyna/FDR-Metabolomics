@@ -26,15 +26,15 @@ Week-by-week plan for the whole project. Update this as you go along.
 
 ## Spring Semester
 
-* **Week 13**
-* **Week 14**
-* **Week 15**
-* **Week 16**
-* **Week 17**
-* **Week 19**
-* **Week 20**
-* **Week 21**
-* **Week 22**
-* **Week 23 [TERM ENDS]**
+* **Week 13** Continue experimenting with the knockoff technique, experiment with Spec2Vec dimensionality to find the most optimal parameters.
+* **Week 14** Continue experimenting with the knockoff technique and evaluate the current results, progresson the background for the thesis.
+* **Week 15** Adjust the pipeline to account for GC/MS data, progress on the introduction for the thesis.
+* **Week 16** Progress on including GC/MS data, progress on the experimental part of the thesis.
+* **Week 17** Progress on including GC/MS data, progress on the experimental part of the thesis.
+* **Week 19** Test the FDR estimation pipeline with different set of data inputs (LC/MS, GC/MS, libraries,denoised data sets etc.), progress on the experimental part of the thesis.
+* **Week 20** Continue testing the pipeline, refactor code and write documentation.
+* **Week 21** Evaluate all results and progress in writing evaluation for the thesis.
+* **Week 22** Write the conclusion for the thesis,  discuss handover of the project and talk to interestedparties that could benefit from knowing about these results.
+* **Week 23 [TERM ENDS]** Create a presentation on the project.
 * **Week 24** Dissertation submission deadline and presentations.
 

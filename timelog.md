@@ -266,3 +266,12 @@
 
 ### 17 Jan 2021
 * *2 hours* Fitted a GMM for each spectrum vector and created a process for multiple knockoff creation given multiple spectra.
+
+## Week 14
+
+### 18 Jan 2021
+* *3 hours* Partially replaced Passatutto approach with ready knockoffs in the basic pipeline.
+
+### 19 Jan 2021
+* *1 hour* Restrospective on progress, planning the next few weeks.
+
