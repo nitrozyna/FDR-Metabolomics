@@ -18,7 +18,9 @@ def getMeta(spec, spec2vec=False):
     else:
         return spec.metadata
 
-def get_hits(query_spec, library_spec, precursor_tol=1, metaKey='parent_mass', cosine_tol=0.1, decoys=False, spec2vec_model=None):
+def get_hits(query_spec, library_spec, precursor_tol=1, metaKey='parent_mass', cosine_tol=0.1, decoys=False, spec2vec_model=None,
+                                                        intensity_weighting_power=0,
+                                                        allowed_missing_percentage=0):
     if spec2vec_model is None:
         cosine = CosineGreedy(tolerance=cosine_tol)
     library_spec.sort(key=lambda x: getMeta(x,spec2vec_model)[metaKey])
@@ -47,10 +49,19 @@ def get_hits(query_spec, library_spec, precursor_tol=1, metaKey='parent_mass', c
                     if decoys:
                         reference_vector = l._obj.metadata['vector']
                     else:
-                        reference_vector = calc_vector(spec2vec_model, l)
-                    query_vector = calc_vector(spec2vec_model, q)
-
-                    s = cosine_similarity(reference_vector, query_vector)
+                        reference_vector = calc_vector(spec2vec_model, l,
+                                                       intensity_weighting_power=intensity_weighting_power,
+                                                       allowed_missing_percentage=allowed_missing_percentage)
+                    try:
+                        query_vector = calc_vector(spec2vec_model, q,
+                                                   intensity_weighting_power=intensity_weighting_power,
+                                                   allowed_missing_percentage=allowed_missing_percentage)
+                    except (AssertionError, ValueError) as e:
+                        misses.append(q)
+                        print('unable to process', getMeta(q,spec2vec_model).get('compound_name'))
+                        break
+                    else:
+                        s = cosine_similarity(reference_vector, query_vector)
                 else:
                     s, _ = cosine.pair(q, l)
                 if s != s:
@@ -59,16 +70,17 @@ def get_hits(query_spec, library_spec, precursor_tol=1, metaKey='parent_mass', c
                 scores.append((s, l))
             # if all( s[0] == 0.0 for s in scores ):
             #    print(q.get('compound_name'))
-            scores.sort(key=lambda x: x[0], reverse=True)
-            score, target = scores[0]
-            if found:
-                if decoys:
-                    hits.append(Hit(q, target, score, 'decoy'))
-                else:
-                    hits.append(Hit(q, target, score, inchis_equal(q, scores[0][1], spec2vec_model)))
             else:
-                misses.append(q)
-                hits.append(Hit(q, target, score, False))
+                scores.sort(key=lambda x: x[0], reverse=True)
+                score, target = scores[0]
+                if found:
+                    if decoys:
+                        hits.append(Hit(q, target, score, 'decoy'))
+                    else:
+                        hits.append(Hit(q, target, score, inchis_equal(q, scores[0][1], spec2vec_model)))
+                else:
+                    misses.append(q)
+                    hits.append(Hit(q, target, score, False))
     return hits, misses
 
 
