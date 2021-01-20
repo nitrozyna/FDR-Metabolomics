@@ -55,11 +55,11 @@ class PassatutoParser:
             if verbose and i and not i % 100:
                 print( "processed %d files" % i )
         if verbose:
-            print( "FinishedParserPassatuto:
-    name_overwrites = { parsing of %d spectra " % i)
+            print( "Finished parsing of %d spectra " % i)
         return spectrums
 
-class Decoy
+class DecoyParserPassatuto:
+    name_overwrites = {
         "ACCESSION:": "source_file",
         "MS$FOCUSED_ION: PRECURSOR_M/Z": "precursor_mz",
         "MS$FOCUSED_ION: PRECURSOR_TYPE": "adduct",
