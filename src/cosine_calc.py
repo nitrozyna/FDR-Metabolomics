@@ -2,7 +2,7 @@ from matchms.similarity import CosineGreedy
 from rdkit.Chem.inchi import InchiToInchiKey, MolToInchiKey
 import bisect
 from collections import namedtuple
-from spec2vec import Spec2Vec
+from spec2vec.vector_operations import calc_vector, cosine_similarity
 import numpy as np
 
 Hit = namedtuple('Hit', ['query', 'target', 'score', 'hit'])
@@ -18,11 +18,9 @@ def getMeta(spec, spec2vec=False):
     else:
         return spec.metadata
 
-def get_hits(query_spec, library_spec, precursor_tol=1, metaKey='parent_mass', cosine_tol=0.1, decoys=False, include_impossible_hits=True, spec2vec_model=None):
-    if spec2vec_model is not None:
-        similarity_measure = Spec2Vec(spec2vec_model)
-    else:
-        similarity_measure = CosineGreedy(tolerance=cosine_tol)
+def get_hits(query_spec, library_spec, precursor_tol=1, metaKey='parent_mass', cosine_tol=0.1, decoys=False, spec2vec_model=None):
+    if spec2vec_model is None:
+        cosine = CosineGreedy(tolerance=cosine_tol)
     library_spec.sort(key=lambda x: getMeta(x,spec2vec_model)[metaKey])
     hits = []
     misses = []
@@ -46,9 +44,15 @@ def get_hits(query_spec, library_spec, precursor_tol=1, metaKey='parent_mass', c
                 if inchis_equal(q, l, spec2vec_model):
                     found = True
                 if spec2vec_model:
-                    s = similarity_measure.pair(q, l)
+                    if decoys:
+                        reference_vector = l._obj.metadata['vector']
+                    else:
+                        reference_vector = calc_vector(spec2vec_model, l)
+                    query_vector = calc_vector(spec2vec_model, q)
+
+                    s = cosine_similarity(reference_vector, query_vector)
                 else:
-                    s, _ = similarity_measure.pair(q, l)
+                    s, _ = cosine.pair(q, l)
                 if s != s:
                     print('got nan for', q.get('compound_name'))
                     continue
@@ -64,8 +68,7 @@ def get_hits(query_spec, library_spec, precursor_tol=1, metaKey='parent_mass', c
                     hits.append(Hit(q, target, score, inchis_equal(q, scores[0][1], spec2vec_model)))
             else:
                 misses.append(q)
-                if include_impossible_hits:
-                    hits.append(Hit(q, target, score, False))
+                hits.append(Hit(q, target, score, False))
     return hits, misses
 
 
