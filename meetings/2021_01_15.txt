@@ -17,4 +17,4 @@ Take a corresponding Gaussian to generate knockoffs.
 No need to know how to optimize D further just yet,
 
 Look for the notebook that Florian has done with red curve, black curve ( comparison of spec2vec to cosine), amount of true positives.
-This notebook will helo you in defining demensions.
+This notebook will help you in defining demensions.

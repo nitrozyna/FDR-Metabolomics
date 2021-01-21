@@ -1,11 +1,11 @@
 from matchms.similarity import CosineGreedy
-from rdkit.Chem.inchi import InchiToInchiKey, MolToInchiKey
 import bisect
 from collections import namedtuple
 from spec2vec.vector_operations import calc_vector, cosine_similarity
 import numpy as np
 
 Hit = namedtuple('Hit', ['query', 'target', 'score', 'hit'])
+from rdkit.Chem.inchi import InchiToInchiKey, MolToInchiKey
 
 
 def inchis_equal(s1, s2,spec2vec=False):
