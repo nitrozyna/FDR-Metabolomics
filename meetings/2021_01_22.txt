@@ -1,0 +1,11 @@
+Notes during the meeting:
+
+Do not try to plot q-value plots with dimensions and knockoffs. Try to optimise the dimensions first, based on Florians notebook with true/false positives.
+
+Later, we will want to experiment with D and number of mixture components in the knockoff creation but only when we find the most optimal dimensions.
+
+Plan for next week:
+
+Send the true/false positive rate plots to Simon for different dimensions and choose the most optimal one. Then move on to experimenting with D and number of mixture
+
+components.
