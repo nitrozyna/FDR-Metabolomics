@@ -284,4 +284,10 @@
 * 2 hours* Created graphs with True/False hits and cosine score representations for he LC/MS dataset.
 * 1 hour* Played with dimension and effect on the True/False hits.
 
+### 22 Jan 2021
+* 3 hours* Created a notebook which accepts varying D, dimensions etc. and generates q-value plots for knockoffs.
+* 2 hours* Played with the true/false positive rate graphs and generated plots with varying dimensions (without cosine comparison yet)
+* 0.5 hour* Meeting with supervisor.
+* 0.5 hour* Meeting notes and defined a plan for the next couple of days working on the project.
+
 
