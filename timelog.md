@@ -275,7 +275,13 @@
 ### 19 Jan 2021
 * *1 hour* Restrospective on progress, planning the next few weeks.
 
-### 19 Jan 2021
+### 20 Jan 2021
 * 4 hours* Finished the knockoff technique, plotted the q-value plots with comparison to library data (from the Boecker lab).
 * 1 hour* Manually experimented with D, number of dimensions, intensity_weighting_power, allowed_missing_percentage to see relations and define optimal parameters.
+
+### 21 Jan 2021
+* 3 hours* Updated the knockoff technique for LC/MS data, plotted the q-value plots.
+* 2 hours* Created graphs with True/False hits and cosine score representations for he LC/MS dataset.
+* 1 hour* Played with dimension and effect on the True/False hits.
+
 
