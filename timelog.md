@@ -290,4 +290,8 @@
 * 0.5 hour* Meeting with supervisor.
 * 0.5 hour* Meeting notes and defined a plan for the next couple of days working on the project.
 
+### 23 Jan 2021
+* 2 hours* Read a few thesis papers from previous UofG students.
+* 2 hours* Started writing background and parts of introduction of the thesis.
+
 
