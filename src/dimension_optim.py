@@ -48,7 +48,8 @@ def init(query_size=1500, library_size=2500, unseen_query_size=500, unique_match
         if unique_match:
             library_spec.append(ss[1])
         else:
-            library_spec.append(ss[1:])
+            for s_ in ss[1:]:
+                library_spec.append(s_)
     for i, o in enumerate(other_keys):
         ss = np.random.choice(inchi_dict[o], size=1, replace=False)
         if i < unseen_query_size:
@@ -156,7 +157,7 @@ def f(size, intensity_weighting_power=0.5, allowed_missing_percentage=15):
     plt.xlabel('false positives rate', fontsize=16)
     plt.ylabel('true positive rate', fontsize=16)
     plt.xlim(0,.8)
-    plt.ylim(0,.35)
+    plt.ylim(0,.5)
 
     filename2 = "tfr_%d_%.2f_%.2f.png" % (size, intensity_weighting_power, allowed_missing_percentage)
     plt.savefig(os.path.join(folder_name, 'FDR-Metabolomics', 'data', 'opt_lcms_dim', filename2))
