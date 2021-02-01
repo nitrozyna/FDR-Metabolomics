@@ -294,4 +294,16 @@
 * 2 hours* Read a few thesis papers from previous UofG students.
 * 2 hours* Started writing background and parts of introduction of the thesis.
 
+### 28 Jan 2021
+*4 hours* Experimenting with dimensions. Problems to achieve the same performance with Spec2Vec as Cosine.
+
+### 29 Jan 2021
+*5 hours* Experimenting with dimensions. Problems to achieve the same performance with Spec2Vec as Cosine.
+*0.5 hour* Meeting with supervisor.
+
+### 30 Jan 2021
+*1 hour* Set up model training on another machine with different dimensions and let it run for a couple of days.
+
+
+
 
