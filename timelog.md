@@ -311,7 +311,7 @@
 ### 02 Feb 2021
 * *2 hours* Obtained models with different dimensions and set up experiments with varying library and query spectra to check the performance in comparison to Cosine Similarity.
 * *1 hours* Interpreted the results for above experiments and noted down the plan for future experiments.
-* *0.5 hours* Set up another experimental model training on another machine with different dimensions and let it run for a couple of days.
+* *0.5 hour* Set up another experimental model training on another machine with different dimensions and let it run for a couple of days.
 
 
 
