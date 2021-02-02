@@ -276,42 +276,42 @@
 * *1 hour* Restrospective on progress, planning the next few weeks.
 
 ### 20 Jan 2021
-* 4 hours* Finished the knockoff technique, plotted the q-value plots with comparison to library data (from the Boecker lab).
-* 1 hour* Manually experimented with D, number of dimensions, intensity_weighting_power, allowed_missing_percentage to see relations and define optimal parameters.
+* *4 hours* Finished the knockoff technique, plotted the q-value plots with comparison to library data (from the Boecker lab).
+* *1 hour* Manually experimented with D, number of dimensions, intensity_weighting_power, allowed_missing_percentage to see relations and define optimal parameters.
 
 ### 21 Jan 2021
-* 3 hours* Updated the knockoff technique for LC/MS data, plotted the q-value plots.
-* 2 hours* Created graphs with True/False hits and cosine score representations for he LC/MS dataset.
-* 1 hour* Played with dimension and effect on the True/False hits.
+* *3 hours* Updated the knockoff technique for LC/MS data, plotted the q-value plots.
+* *2 hours* Created graphs with True/False hits and cosine score representations for he LC/MS dataset.
+* *1 hour* Played with dimension and effect on the True/False hits.
 
 ### 22 Jan 2021
-* 3 hours* Created a notebook which accepts varying D, dimensions etc. and generates q-value plots for knockoffs.
-* 2 hours* Played with the true/false positive rate graphs and generated plots with varying dimensions (without cosine comparison yet)
-* 0.5 hour* Meeting with supervisor.
-* 0.5 hour* Meeting notes and defined a plan for the next couple of days working on the project.
+* *3 hours* Created a notebook which accepts varying D, dimensions etc. and generates q-value plots for knockoffs.
+* *2 hours* Played with the true/false positive rate graphs and generated plots with varying dimensions (without cosine comparison yet)
+* *0.5 hour* Meeting with supervisor.
+* *0.5 hour* Meeting notes and defined a plan for the next couple of days working on the project.
 
 ### 23 Jan 2021
-* 2 hours* Read a few thesis papers from previous UofG students.
-* 2 hours* Started writing background and parts of introduction of the thesis.
+* *2 hours* Read a few thesis papers from previous UofG students.
+* *2 hours* Started writing background and parts of introduction of the thesis.
 
 ## Week 15
 
 ### 28 Jan 2021
-*4 hours* Experimenting with dimensions. Problems to achieve the same performance with Spec2Vec as Cosine.
+* *4 hours* Experimenting with dimensions. Problems to achieve the same performance with Spec2Vec as Cosine.
 
 ### 29 Jan 2021
-*5 hours* Experimenting with dimensions. Problems to achieve the same performance with Spec2Vec as Cosine.
-*0.5 hour* Meeting with supervisor.
+* *5 hours* Experimenting with dimensions. Problems to achieve the same performance with Spec2Vec as Cosine.
+* *0.5 hour* Meeting with supervisor.
 
 ### 30 Jan 2021
-*1 hour* Set up model training on another machine with different dimensions and let it run for a couple of days.
+* *1 hour* Set up model training on another machine with different dimensions and let it run for a couple of days.
 
 ## Week 16
 
 ### 02 Feb 2021
-*2 hour* Obtained models with different dimensions and set up experiments with varying library and query spectra to check the performance in comparison to Cosine Similarity.
-*1 hour* Interpreted the results for above experiments and noted down the plan for future experiments.
-*0.5 hour* Set up another experimental model training on another machine with different dimensions and let it run for a couple of days.
+* *2 hour* Obtained models with different dimensions and set up experiments with varying library and query spectra to check the performance in comparison to Cosine Similarity.
+* *1 hour* Interpreted the results for above experiments and noted down the plan for future experiments.
+* *0.5 hour* Set up another experimental model training on another machine with different dimensions and let it run for a couple of days.
 
 
 
