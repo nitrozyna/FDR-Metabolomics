@@ -1,0 +1,7 @@
+Notes during the meeting:
+Contact Florian in case you need help in training models with different dimensions or contact Simon for access to his Linux machine in the office.
+
+GC/MS FDR estimation should only happen once I have the entire working pipeline for FDR in LC/MS
+
+Until next week:
+Try to ran the Spec2Vec dimensionality optimization experiments and present results to Simon. Run the knockooff notebook with the most optimal dimensions.
