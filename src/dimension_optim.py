@@ -9,6 +9,7 @@ import plot_q_vals
 from matchms.importing import load_from_json
 import numpy as np
 import os
+import gensim
 
 json_file_name = 'C:\\Users\\Gosia\\Desktop\\FDR-datsets\\specs.json'
 spec_with_precursor = load_from_json(json_file_name)
@@ -67,16 +68,19 @@ def init(query_size=1500, library_size=2500, unseen_query_size=500, unique_match
 
 
 folder_name = 'C:\\Users\\Gosia\\Desktop'
-path_models = os.path.join(folder_name, "trained_models")
+path_models = os.path.join(folder_name, "trained_models_1")
 
 
 def f(size, intensity_weighting_power=0.5, allowed_missing_percentage=15):
-    model_file = os.path.join(path_models, "spec2vec_librarymatching_size_%d.model" % size)
+    #model_file = os.path.join(path_models, "spec2vec_librarymatching_size_%d.model" % size)
     iterations = [1, 3, 5, 10]
 
     # Train model with size 10 and default parameters
     from spec2vec.vector_operations import calc_vector
-    model = train_new_word2vec_model(documents_lib, iterations, model_file, size=size)
+    model_file = os.path.join(path_models, "spec2vec_size_%d.model"%size)
+
+    # Load pretrained model
+    model = gensim.models.Word2Vec.load(model_file)
 
     cos_hits, _ = cosine_calc.get_hits(spectrums_query, spectrums_lib, cosine_tol=.005)
     hits, _ = cosine_calc.get_hits(documents_query, documents_lib, spec2vec_model=model,
