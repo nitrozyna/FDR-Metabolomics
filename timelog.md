@@ -320,5 +320,8 @@
 ### 04 Feb 2021
 * *2 hours* Debugging as I can't obtain the results mentioned above.
 
-
+### 05 Feb 2021
+* *2 hours* Debugging
+* *2 hours* Changed the cosine to min_max = 6, interpreted the results. 
+* *0.5 hour* Meeting with supervisor
 
