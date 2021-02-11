@@ -1,15 +1,11 @@
-from spec2vec.model_building import train_new_word2vec_model
-from sklearn.mixture import GaussianMixture
-import copy
-import matplotlib.pyplot as plt
-from spec2vec.SpectrumDocument import SpectrumDocument
 import cosine_calc
-from q_value_calc import calculate_q_value
-import plot_q_vals
-from matchms.importing import load_from_json
+import gensim
+import matplotlib.pyplot as plt
 import numpy as np
 import os
-import gensim
+from matchms.importing import load_from_json
+from spec2vec.SpectrumDocument import SpectrumDocument
+
 
 json_file_name = 'C:\\Users\\Gosia\\Desktop\\FDR-datsets\\specs.json'
 spec_with_precursor = load_from_json(json_file_name)

@@ -63,11 +63,12 @@ def get_hits(query_spec, library_spec, precursor_tol=1, metaKey='parent_mass', c
                     else:
                         s = cosine_similarity(reference_vector, query_vector)
                 else:
-                    s, _ = cosine.pair(q, l)
+                    s, num_matches = cosine.pair(q, l)
                 if s != s:
                     print('got nan for', q.get('compound_name'))
                     continue
-                scores.append((s, l))
+                if num_matches >= 6:
+                    scores.append((s, l))
             # if all( s[0] == 0.0 for s in scores ):
             #    print(q.get('compound_name'))
             else:
