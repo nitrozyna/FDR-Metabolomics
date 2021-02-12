@@ -330,3 +330,8 @@
 ### 11 Feb 2021
 * *4 hours* Collected all the pieces together (drew the plan for the pipeline), refactored previous code and created half of the knockoff pipeline.
 
+### 12 Feb 2021
+* *4 hours* Finished the knockoff pipeline and started debugging as the q-value plot doesn't look great.
+* *0.5 hour* Meeting with supervisor.
+* *0.5 hour* Meeting notes and revised plan.
+
