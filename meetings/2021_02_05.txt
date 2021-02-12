@@ -1,0 +1,2 @@
+Plan for next week:
+Create a knockoff pipeline with the dimensions obtained from Spec2Vec optimisation experiment.

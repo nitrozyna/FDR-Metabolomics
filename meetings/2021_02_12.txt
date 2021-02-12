@@ -1,0 +1,5 @@
+Notes during the meeting:
+
+Something is off with the knockoffs:
+Check your embeddings, the scores are too close to one another in 170 dimensions, might not be too probable.
+Change the number of components in the Gaussian Mixture, change the full covariance to diag in the parameter setting.
