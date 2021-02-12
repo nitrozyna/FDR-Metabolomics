@@ -325,3 +325,8 @@
 * *2 hours* Changed the cosine to min_max = 6, interpreted the results. 
 * *0.5 hour* Meeting with supervisor
 
+## Week 17
+
+### 11 Feb 2021
+* *4 hours* Collected all the pieces together (drew the plan for the pipeline), refactored previous code and created half of the knockoff pipeline.
+
