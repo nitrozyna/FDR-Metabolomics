@@ -19,7 +19,5 @@ def calculate_q_value(hits,decoys=False):
         q_vals[i] = min(fdr_vals[i],q_vals[i+1])
     q_list = []
     for i,h in enumerate(hits):
-        # Simon says:
-        #if h.hit:
-            q_list.append((q_vals[i],h.hit,h.score))
+        q_list.append((q_vals[i],h.hit,h.score))
     return q_list

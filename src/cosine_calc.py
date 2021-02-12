@@ -1,15 +1,15 @@
-from matchms.similarity import CosineGreedy
-from rdkit.Chem.inchi import InchiToInchiKey, MolToInchiKey
 import bisect
 from collections import namedtuple
+
+from matchms.similarity import CosineGreedy
 from spec2vec.vector_operations import calc_vector, cosine_similarity
-import numpy as np
 
 Hit = namedtuple('Hit', ['query', 'target', 'score', 'hit'])
 
 
 def inchis_equal(s1, s2,spec2vec=False):
-    return getMeta(s1,spec2vec).get('inchi',"").split("/")[:4] == getMeta(s2,spec2vec).get('inchi', "").split("/")[:4]
+    #return getMeta(s1,spec2vec).get('inchi',"").split("/")[:4] == getMeta(s2,spec2vec).get('inchi', "").split("/")[:4]
+    return getMeta(s1,spec2vec).get('inchikey_inchi',"").split("-")[0] == getMeta(s2,spec2vec).get('inchikey_inchi', "").split("-")[0]
     # return InchiToInchiKey(s1.metadata['inchi']).split('-')[0] == InchiToInchiKey(s2.metadata['inchi']).split('-')[0]
 
 def getMeta(spec, spec2vec=False):
@@ -63,31 +63,34 @@ def get_hits(query_spec, library_spec, precursor_tol=1, metaKey='parent_mass', c
                     else:
                         s = cosine_similarity(reference_vector, query_vector)
                 else:
-                    s, num_matches = cosine.pair(q, l)
+                    s, match_count = cosine.pair(q, l)
                 if s != s:
                     print('got nan for', q.get('compound_name'))
                     continue
-                if num_matches >= 6:
+                if spec2vec_model is not None or match_count >= 6:
                     scores.append((s, l))
             # if all( s[0] == 0.0 for s in scores ):
             #    print(q.get('compound_name'))
             else:
                 scores.sort(key=lambda x: x[0], reverse=True)
-                score, target = scores[0]
-                if found:
-                    if decoys:
-                        hits.append(Hit(q, target, score, 'decoy'))
+                if scores:
+                    score, target = scores[0]
+                    if found:
+                        if decoys:
+                            hits.append(Hit(q, target, score, 'decoy'))
+                        else:
+                            hits.append(Hit(q, target, score, inchis_equal(q, scores[0][1], spec2vec_model)))
                     else:
-                        hits.append(Hit(q, target, score, inchis_equal(q, scores[0][1], spec2vec_model)))
+                        misses.append(q)
+                        hits.append(Hit(q, target, score, False))
                 else:
                     misses.append(q)
-                    hits.append(Hit(q, target, score, False))
     return hits, misses
 
 
 def add_exact_mass(specs):
-    from rdkit.Chem import MolFromSmiles, MolToSmiles, MolFromInchi
-    from rdkit.Chem.rdMolDescriptors import CalcExactMolWt, CalcMolFormula
+    from rdkit.Chem import MolFromSmiles, MolFromInchi
+    from rdkit.Chem.rdMolDescriptors import CalcExactMolWt
     for s in specs:
         mol = MolFromSmiles(s.get('smiles'))
         if mol is None:
