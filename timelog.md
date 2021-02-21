@@ -335,3 +335,12 @@
 * *0.5 hour* Meeting with supervisor.
 * *0.5 hour* Meeting notes and revised plan.
 
+## Week 18
+
+### 20 Feb 2021
+* *7 hours* Debugging knockoffs, tuning all the parameters.
+
+### 21 Feb 2021
+* *7 hours* Finished debugging knockoffs, figured out D is the most sensitive, changed to covariance type = diag, number of components is the same as number of dimensions.
+
+
