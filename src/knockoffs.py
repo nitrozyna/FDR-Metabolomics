@@ -15,6 +15,7 @@ def is_pos_def(x):
 
 
 def generate_knockoffs(model, document_spectra, intensity_weighting_power=0.5, allowed_missing_percentage=15,
+                       n_components=1, covariance_type='diag', sigma_multiplier=1,
                        diagonal_matrix=0.13):
     # embedding given documents
     vector_size = model.vector_size
@@ -27,12 +28,16 @@ def generate_knockoffs(model, document_spectra, intensity_weighting_power=0.5, a
                                                                 allowed_missing_percentage)
 
     # creating the gaussain mixture
-    gm = GaussianMixture().fit(embeddings_spec2vec_lib)
+    gm = GaussianMixture(n_components=n_components, covariance_type=covariance_type).fit(embeddings_spec2vec_lib)
 
     n_dim = len(embeddings_spec2vec_lib[0])
     # define the mean and covariance
     mu = gm.means_[0]
-    Sigma = gm.covariances_[0]
+    if covariance_type == 'diag':
+        Sigma = np.eye(n_dim) * gm.covariances_
+    else:
+        Sigma = gm.covariances_[0]
+    Sigma = Sigma * sigma_multiplier
     # diagonal matrix
     D = np.eye(n_dim) * diagonal_matrix
 
@@ -65,7 +70,7 @@ def generate_knockoffs(model, document_spectra, intensity_weighting_power=0.5, a
 
 
 def evaluate_knockoff_performance(documents_lib, documents_query, knockoff_documents, model, intensity_weighting_power=0.5,
-                                  allowed_missing_percentage=15):
+                                  allowed_missing_percentage=15, save_file=None):
     hits_knockoffs, _ = cosine_calc.get_hits(documents_query, knockoff_documents, decoys=True, spec2vec_model=model,
                                              intensity_weighting_power=intensity_weighting_power,
                                              allowed_missing_percentage=allowed_missing_percentage)
@@ -87,5 +92,5 @@ def evaluate_knockoff_performance(documents_lib, documents_query, knockoff_docum
 
     scores, trues, estimateds = zip(*combine_true_est(q_list_true, q_list_estimated))
 
-    plot_q_vals.plot_q_vals({'knockoffs': (trues, estimateds)})
+    plot_q_vals.plot_q_vals({'knockoffs': (trues, estimateds)}, filename=save_file)
     return q_list_true, q_list_estimated
