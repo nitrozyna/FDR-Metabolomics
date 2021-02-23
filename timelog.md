@@ -343,4 +343,5 @@
 ### 21 Feb 2021
 * *7 hours* Finished debugging knockoffs, figured out D is the most sensitive, changed to covariance type = diag, number of components is the same as number of dimensions.
 
-
+### 23 Feb 2021
+* *3 hours* Progressed on writing the thesis: knockoffs, Spec2Vec, some basic explanations of biological concepts.
