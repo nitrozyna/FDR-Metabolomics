@@ -348,3 +348,6 @@
 
 ### 24 Feb 2021
 * *1 hour* Progressed on writing the thesis: Spec2Vec
+
+### 25 Feb 2021
+* *1.5 hours* Wrote parts on thesis about cosine similarity and modified cosine.
