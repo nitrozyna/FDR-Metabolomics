@@ -345,3 +345,6 @@
 
 ### 23 Feb 2021
 * *3 hours* Progressed on writing the thesis: knockoffs, Spec2Vec, some basic explanations of biological concepts.
+
+### 24 Feb 2021
+* *1 hour* Progressed on writing the thesis: Spec2Vec
