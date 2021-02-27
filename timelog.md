@@ -351,3 +351,7 @@
 
 ### 25 Feb 2021
 * *1.5 hours* Wrote parts on thesis about cosine similarity and modified cosine.
+
+### 26 Feb 2021
+* *0.5 hour* Meeting with supervisor
+* *0.5 hour* Meeting notes, organising plan for GC/MS analysis.
