@@ -1,0 +1,4 @@
+What's next:
+- make the analysis on Passatutto data and embed their decoys to compare them appropriately with the knockoffs.
+- write to Justin and Florian about GC/MS trained model and progress (cc Simon).
+- continue writing thesis but Simon will only want to read it once before submission so make sure you give him enough time.
