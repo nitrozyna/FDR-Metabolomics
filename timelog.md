@@ -343,4 +343,15 @@
 ### 21 Feb 2021
 * *7 hours* Finished debugging knockoffs, figured out D is the most sensitive, changed to covariance type = diag, number of components is the same as number of dimensions.
 
+### 23 Feb 2021
+* *3 hours* Progressed on writing the thesis: knockoffs, Spec2Vec, some basic explanations of biological concepts.
 
+### 24 Feb 2021
+* *1 hour* Progressed on writing the thesis: Spec2Vec
+
+### 25 Feb 2021
+* *1.5 hours* Wrote parts on thesis about cosine similarity and modified cosine.
+
+### 26 Feb 2021
+* *0.5 hour* Meeting with supervisor
+* *0.5 hour* Meeting notes, organising plan for GC/MS analysis.
