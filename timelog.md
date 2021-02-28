@@ -355,3 +355,8 @@
 ### 26 Feb 2021
 * *0.5 hour* Meeting with supervisor
 * *0.5 hour* Meeting notes, organising plan for GC/MS analysis.
+
+### 27 Feb 2021
+* *4 hours* Progressed on writing thesis and the methods described by Scheubert et al.
+
+
