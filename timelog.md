@@ -359,4 +359,11 @@
 ### 27 Feb 2021
 * *4 hours* Progressed on writing thesis and the methods described by Scheubert et al.
 
+### 28 Feb 2021
+* *0.5 hour* Exchanged several emails with other parties interested in the project.
+
+## Week 19
+
+### 1 March 2021
+* *2 hours* Progressed on writing thesis and the methods described by Scheubert et al.
 
