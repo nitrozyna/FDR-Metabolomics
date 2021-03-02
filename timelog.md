@@ -367,3 +367,6 @@
 ### 1 March 2021
 * *2 hours* Progressed on writing thesis and the methods described by Scheubert et al.
 
+### 2 March 2021
+* *1 hour* More writing of the thesis.
+
