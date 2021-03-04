@@ -369,4 +369,10 @@
 
 ### 2 March 2021
 * *1 hour* More writing of the thesis.
+* *2 hours* Discovered the new multiknockoff paper that would help in variability and instability of the single knockoff technique. Made notes and contacted the supersior about it.
 
+### 3 March 2021
+* *3 hours* Created a comparison of knockoffs to Passautto decoys.
+
+### 4 March 2021
+* *2 hour*  Did a grid search on best D for knockoffs. Created graphs to represent variability and instability of sing knockoffs.
