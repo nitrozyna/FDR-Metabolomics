@@ -355,3 +355,24 @@
 ### 26 Feb 2021
 * *0.5 hour* Meeting with supervisor
 * *0.5 hour* Meeting notes, organising plan for GC/MS analysis.
+
+### 27 Feb 2021
+* *4 hours* Progressed on writing thesis and the methods described by Scheubert et al.
+
+### 28 Feb 2021
+* *0.5 hour* Exchanged several emails with other parties interested in the project.
+
+## Week 19
+
+### 1 March 2021
+* *2 hours* Progressed on writing thesis and the methods described by Scheubert et al.
+
+### 2 March 2021
+* *1 hour* More writing of the thesis.
+* *2 hours* Discovered the new multiknockoff paper that would help in variability and instability of the single knockoff technique. Made notes and contacted the supersior about it.
+
+### 3 March 2021
+* *3 hours* Created a comparison of knockoffs to Passautto decoys.
+
+### 4 March 2021
+* *2 hour*  Did a grid search on best D for knockoffs. Created graphs to represent variability and instability of sing knockoffs.
