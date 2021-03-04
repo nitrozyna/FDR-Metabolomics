@@ -8,9 +8,12 @@ Hit = namedtuple('Hit', ['query', 'target', 'score', 'hit'])
 
 
 def inchis_equal(s1, s2,spec2vec=False):
-    #return getMeta(s1,spec2vec).get('inchi',"").split("/")[:4] == getMeta(s2,spec2vec).get('inchi', "").split("/")[:4]
     return getMeta(s1,spec2vec).get('inchikey_inchi',"").split("-")[0] == getMeta(s2,spec2vec).get('inchikey_inchi', "").split("-")[0]
     # return InchiToInchiKey(s1.metadata['inchi']).split('-')[0] == InchiToInchiKey(s2.metadata['inchi']).split('-')[0]
+
+def passatutto_inchis_equal(s1,s2,spec2vec=False):
+    return getMeta(s1,spec2vec).get('inchi',"").split("/")[:4] == getMeta(s2,spec2vec).get('inchi', "").split("/")[:4]
+
 
 def getMeta(spec, spec2vec=False):
     if spec2vec:
@@ -20,7 +23,7 @@ def getMeta(spec, spec2vec=False):
 
 def get_hits(query_spec, library_spec, precursor_tol=1, metaKey='parent_mass', cosine_tol=0.1, decoys=False, spec2vec_model=None,
                                                         intensity_weighting_power=0,
-                                                        allowed_missing_percentage=0):
+                                                        allowed_missing_percentage=0, passatutto=False):
     if spec2vec_model is None:
         cosine = CosineGreedy(tolerance=cosine_tol)
     library_spec.sort(key=lambda x: getMeta(x,spec2vec_model)[metaKey])
@@ -43,8 +46,12 @@ def get_hits(query_spec, library_spec, precursor_tol=1, metaKey='parent_mass', c
             found = decoys
             scores = []
             for l in library_spec[pos:pos2]:
-                if inchis_equal(q, l, spec2vec_model):
-                    found = True
+                if passatutto:
+                    if passatutto_inchis_equal(q, l, spec2vec_model):
+                        found = True
+                else:
+                    if inchis_equal(q, l, spec2vec_model):
+                        found = True
                 if spec2vec_model:
                     if decoys:
                         reference_vector = l._obj.metadata['vector']
@@ -79,7 +86,10 @@ def get_hits(query_spec, library_spec, precursor_tol=1, metaKey='parent_mass', c
                         if decoys:
                             hits.append(Hit(q, target, score, 'decoy'))
                         else:
-                            hits.append(Hit(q, target, score, inchis_equal(q, scores[0][1], spec2vec_model)))
+                            if passatutto:
+                                hits.append(Hit(q, target, score, passatutto_inchis_equal(q, scores[0][1], spec2vec_model)))
+                            else:
+                                hits.append(Hit(q, target, score, inchis_equal(q, scores[0][1], spec2vec_model)))
                     else:
                         misses.append(q)
                         hits.append(Hit(q, target, score, False))
