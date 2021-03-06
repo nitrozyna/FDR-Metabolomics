@@ -376,3 +376,7 @@
 
 ### 4 March 2021
 * *2 hour*  Did a grid search on best D for knockoffs. Created graphs to represent variability and instability of sing knockoffs.
+
+### 5 March 2021
+* *0.5 hour*  Meeting with supervisor.
+* *4 hours*  Wrote parts of the thesis about knockoffs.
