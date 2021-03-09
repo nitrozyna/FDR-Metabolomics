@@ -1,0 +1,4 @@
+Talked about the new discovery which allows for the FDR to be more controlled (multi-knockoffs). Simon proposed to just take the mean in the current knockoff technique
+instead, and return that.
+
+I got the GC-MS data as well, so I can start working on that.
