@@ -380,3 +380,7 @@
 ### 5 March 2021
 * *0.5 hour*  Meeting with supervisor.
 * *4 hours*  Wrote parts of the thesis about knockoffs.
+
+## Week 20
+* *3 hours*  Wrote parts of the thesis: FDR, q-value calculation with references to mass spectra matches and decoys.
+
