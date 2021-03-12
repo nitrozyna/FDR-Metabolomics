@@ -390,3 +390,11 @@
 ### 10 March 2021
 * *1 hour* Grid search for the right D in the GC-MS dataset.
 * *2 hours* Wrote parts of the thesis: p-values and q-value correction.
+
+### 11 March 2021
+* *2 hours* Debugging GC-MS.
+
+### 12 March 2021
+* *2 hours* Changed knockoffs to see if they can be less variable.
+* *1 hour* Meeting with supervisor
+
