@@ -27,10 +27,23 @@ def get_hits(query_spec, library_spec, precursor_tol=1, metaKey='parent_mass', c
     if spec2vec_model is None:
         cosine = CosineGreedy(tolerance=cosine_tol)
     library_spec.sort(key=lambda x: getMeta(x,spec2vec_model)[metaKey])
+    
+    if spec2vec_model:
+        ref_vectors = []
+        query_vectors = []
+        for q in query_spec:
+            query_vectors.append( calc_vector(spec2vec_model, q,
+                                       intensity_weighting_power=intensity_weighting_power,
+                                       allowed_missing_percentage=allowed_missing_percentage) )
+        for l in library_spec:
+            ref_vectors.append( calc_vector(spec2vec_model, l,
+                                       intensity_weighting_power=intensity_weighting_power,
+                                       allowed_missing_percentage=allowed_missing_percentage) )
+            
     hits = []
     misses = []
     library_prec_list = [getMeta(x,spec2vec_model)[metaKey] for x in library_spec]
-    for q in query_spec:
+    for q_idx, q in enumerate( query_spec ):
         if metaKey not in getMeta(q,spec2vec_model):
             continue
         min_mz = getMeta(q,spec2vec_model)[metaKey] - precursor_tol
@@ -45,7 +58,8 @@ def get_hits(query_spec, library_spec, precursor_tol=1, metaKey='parent_mass', c
         else:
             found = decoys
             scores = []
-            for l in library_spec[pos:pos2]:
+            for l_idx in range( pos, pos2 ):
+                l = library_spec[l_idx]
                 if passatutto:
                     if passatutto_inchis_equal(q, l, spec2vec_model):
                         found = True
@@ -56,13 +70,9 @@ def get_hits(query_spec, library_spec, precursor_tol=1, metaKey='parent_mass', c
                     if decoys:
                         reference_vector = l._obj.metadata['vector']
                     else:
-                        reference_vector = calc_vector(spec2vec_model, l,
-                                                       intensity_weighting_power=intensity_weighting_power,
-                                                       allowed_missing_percentage=allowed_missing_percentage)
+                        reference_vector = ref_vectors[l_idx]
                     try:
-                        query_vector = calc_vector(spec2vec_model, q,
-                                                   intensity_weighting_power=intensity_weighting_power,
-                                                   allowed_missing_percentage=allowed_missing_percentage)
+                        query_vector = query_vectors[q_idx]
                     except (AssertionError, ValueError) as e:
                         misses.append(q)
                         print('unable to process', getMeta(q,spec2vec_model).get('compound_name'))

@@ -15,7 +15,7 @@ def is_pos_def(x):
 
 
 def generate_knockoffs(model, document_spectra, intensity_weighting_power=0.5, allowed_missing_percentage=15,
-                       n_components=1, covariance_type='diag', sigma_multiplier=1,
+                       n_components=1, sigma_multiplier=1, randomness=True,
                        diagonal_matrix=0.13):
     # embedding given documents
     vector_size = model.vector_size
@@ -27,38 +27,44 @@ def generate_knockoffs(model, document_spectra, intensity_weighting_power=0.5, a
                                                                 intensity_weighting_power,
                                                                 allowed_missing_percentage)
 
-    # creating the gaussain mixture
-    gm = GaussianMixture(n_components=n_components, covariance_type=covariance_type).fit(embeddings_spec2vec_lib)
+    # creating the gaussian mixture
+    gm = GaussianMixture(n_components=n_components, covariance_type='diag').fit(embeddings_spec2vec_lib)
 
     n_dim = len(embeddings_spec2vec_lib[0])
-    # define the mean and covariance
-    mu = gm.means_[0]
-    if covariance_type == 'diag':
-        Sigma = np.eye(n_dim) * gm.covariances_
-    else:
-        Sigma = gm.covariances_[0]
-    Sigma = Sigma * sigma_multiplier
     # diagonal matrix
-    D = np.eye(n_dim) * diagonal_matrix
 
-    joint_cov = np.hstack((Sigma, Sigma - D))
-    joint_cov = np.vstack((joint_cov, np.hstack((Sigma - D, Sigma))))
-
-    assert is_pos_def(joint_cov), "Joint covariance matrix has to be positive definite"
-
-    A = np.eye(n_dim) - np.dot(D, np.linalg.inv(Sigma))
-
+    
     all_knockoffs = []
-    # generate a sample
+    # generate N knock-offs
+    idxs = list(range(n_components))
     for point in embeddings_spec2vec_lib:
-        # generate N knock-offs
+        
+        component = np.random.choice( idxs, p=gm.predict_proba( [point] )[0] )
+        mu = gm.means_[component]
+        cov = gm.covariances_[component]
+        
+        Sigma = np.eye(n_dim) * cov
+        Sigma = Sigma * sigma_multiplier
+
+        D = np.eye(n_dim) * diagonal_matrix
+
+        joint_cov = np.hstack((Sigma, Sigma - D))
+        joint_cov = np.vstack((joint_cov, np.hstack((Sigma - D, Sigma))))
+
+        assert is_pos_def(joint_cov), "Joint covariance matrix has to be positive definite"
+
+        A = np.eye(n_dim) - np.dot(D, np.linalg.inv(Sigma))
         kmu = np.dot(np.dot(D, np.linalg.inv(Sigma)), mu)
         B = np.dot(A, point.T)
         kmu += B
-        kSigma = 2 * D - np.dot(np.dot(D, np.linalg.inv(Sigma)), D)
-        ko = np.random.multivariate_normal(kmu.flatten(), kSigma, 1)
-        all_knockoffs.append(ko)
+        if randomness:
+            kSigma = 2 * D - np.dot(np.dot(D, np.linalg.inv(Sigma)), D)
+            ko = np.random.multivariate_normal(kmu.flatten(), kSigma, 1)
+            all_knockoffs.append(ko)
+        else:
+            all_knockoffs.append([kmu])
 
+            
     knockoff_documents = []
     for ko, v, d in zip(all_knockoffs, embeddings_spec2vec_lib, document_spectra):
         e = copy.deepcopy(d)
