@@ -398,3 +398,8 @@
 * *2 hours* Changed knockoffs to see if they can be less variable.
 * *1 hour* Meeting with supervisor
 
+### 13 March 2021
+* *6 hours* Thesis writing: knockoffs.
+
+### 14 March 2021
+* *8 hours* Fixed knockoffs for LC-MS, still struggling with GC-MS.
