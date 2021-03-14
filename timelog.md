@@ -375,13 +375,26 @@
 * *3 hours* Created a comparison of knockoffs to Passautto decoys.
 
 ### 4 March 2021
-* *2 hour*  Did a grid search on best D for knockoffs. Created graphs to represent variability and instability of sing knockoffs.
+* *2 hour* Did a grid search on best D for knockoffs. Created graphs to represent variability and instability of sing knockoffs.
 
 ### 5 March 2021
-* *0.5 hour*  Meeting with supervisor.
-* *4 hours*  Wrote parts of the thesis about knockoffs.
+* *0.5 hour* Meeting with supervisor.
+* *4 hours* Wrote parts of the thesis about knockoffs.
 
 ## Week 20
-* *3 hours*  Wrote parts of the thesis: FDR, q-value calculation with references to mass spectra matches and decoys.
-* *4 hours*  Progressed GC-MS Spec2Vec and knockoff analysis.
+
+### 9 March 2021
+* *3 hours* Wrote parts of the thesis: FDR, q-value calculation with references to mass spectra matches and decoys.
+* *4 hours* Progressed GC-MS Spec2Vec and knockoff analysis.
+
+### 10 March 2021
+* *1 hour* Grid search for the right D in the GC-MS dataset.
+* *2 hours* Wrote parts of the thesis: p-values and q-value correction.
+
+### 11 March 2021
+* *2 hours* Debugging GC-MS.
+
+### 12 March 2021
+* *2 hours* Changed knockoffs to see if they can be less variable.
+* *1 hour* Meeting with supervisor
 
