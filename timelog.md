@@ -407,3 +407,8 @@
 ### 15 March 2021
 * *5 hours* More thesis writing: knockoffs.
 
+### 17 March 2021
+* *2 hours* More thesis writing: knockoffs.
+
+### 18 March 2021
+* *2 hours* More thesis writing: knockoffs.
