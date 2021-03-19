@@ -1,0 +1,3 @@
+Remember to not go into detail regarding metaboomics, it's better to do a paragraph from a computer scientist point of view (what are spectra? A list of tuples with mass)
+
+Don't cover too many knockoff techniques, focus on why we chose this specific one and why it works with spectra (given Spec2Vec).

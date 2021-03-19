@@ -1,0 +1,3 @@
+The knockoffs are wrong, use predict_proba to get the meana covariances instead of taking the first one gm.means_[0].
+This should hopefully fix the problems with GC-MS.
+Send an email to Simon with the fixed code, create new knockoffs.
