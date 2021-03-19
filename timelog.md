@@ -398,3 +398,19 @@
 * *2 hours* Changed knockoffs to see if they can be less variable.
 * *1 hour* Meeting with supervisor
 
+### 13 March 2021
+* *6 hours* Thesis writing: knockoffs.
+
+### 14 March 2021
+* *8 hours* Fixed knockoffs for LC-MS, still struggling with GC-MS.
+
+## Week 21
+
+### 15 March 2021
+* *5 hours* More thesis writing: knockoffs.
+
+### 17 March 2021
+* *2 hours* More thesis writing: knockoffs.
+
+### 18 March 2021
+* *2 hours* More thesis writing: knockoffs.
