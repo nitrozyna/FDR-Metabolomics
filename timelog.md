@@ -414,3 +414,7 @@
 
 ### 18 March 2021
 * *2 hours* More thesis writing: knockoffs.
+
+### 19 March 2021
+* *1 hour* Focused on analysis of the unfiltered Passatutto data.
+* *1 hour* Meeting with supervisor and updated meeting notes.
