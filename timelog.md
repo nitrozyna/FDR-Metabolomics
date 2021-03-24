@@ -422,3 +422,5 @@
 ### 23 March 2021
 * *6 hours* Wrote parts of thesis: organised knockoff text and started experimentation.
 
+### 24 March 2021
+* *8 hours* Wrote parts of thesis: finished LC-MS experimentation.
