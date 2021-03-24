@@ -418,3 +418,7 @@
 ### 19 March 2021
 * *1 hour* Focused on analysis of the unfiltered Passatutto data.
 * *1 hour* Meeting with supervisor and updated meeting notes.
+
+### 23 March 2021
+* *6 hour* Wrote parts of thesis: organised knockoff text and started experimentation.
+
