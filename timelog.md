@@ -420,5 +420,5 @@
 * *1 hour* Meeting with supervisor and updated meeting notes.
 
 ### 23 March 2021
-* *6 hour* Wrote parts of thesis: organised knockoff text and started experimentation.
+* *6 hours* Wrote parts of thesis: organised knockoff text and started experimentation.
 
