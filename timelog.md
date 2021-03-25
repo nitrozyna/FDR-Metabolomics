@@ -424,3 +424,6 @@
 
 ### 24 March 2021
 * *8 hours* Wrote parts of thesis: finished LC-MS experimentation.
+
+### 25 March 2021
+* *8 hours* Wrote parts of thesis: Passatutto experimentation section.
