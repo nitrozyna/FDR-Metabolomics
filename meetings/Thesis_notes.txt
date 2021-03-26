@@ -1,0 +1,12 @@
+- clear the code (remove unnecessary default parameters from preprocessing)
+- can we get rid of the preprocessing of decoys?
+- why do i need such a high allowed missing percentage for decoys?
+- create graphs and three notebooks (lc-ms, passatutto, passatutto basic, gcms)
+- create bibliography
+- create graphs
+- notebook for dimensionality exp. (copy the graphs)
+- notebook for training of the model
+- make sure to check the accuracy level of creating SpectrumDocuments. Do we need two decimal points or one?
+
+
+

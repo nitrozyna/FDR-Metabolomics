@@ -1,0 +1,10 @@
+1. Can Justin help read the thesis?
+2. What other test statistics could we use to measure success?
+3. What should be the structure of the methods section?
+4. How much of GC/MS should we include?
+
+There is no other test statistics that I need to include, q-value plots are just fine.
+Justin can read my work but he will most likely help around biology.
+Send the thesis on Thursday so that Simon can give me feedback by next Friday.
+Methods can be structured the same way as they are right now.
+Simon would include GC/MS and why it did not work out.

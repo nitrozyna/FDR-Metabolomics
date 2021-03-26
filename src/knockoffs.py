@@ -14,9 +14,8 @@ def is_pos_def(x):
     return np.all(np.linalg.eigvals(x) > 0)
 
 
-def generate_knockoffs(model, document_spectra, intensity_weighting_power=0.5, allowed_missing_percentage=15,
-                       n_components=1, sigma_multiplier=1, randomness=True,
-                       diagonal_matrix=0.13):
+def generate_knockoffs(model, document_spectra, diagonal_matrix, intensity_weighting_power=0.5, allowed_missing_percentage=15,
+                       n_components=1, sigma_multiplier=1, randomness=True):
     # embedding given documents
     vector_size = model.vector_size
     print(f"Embedding vector size: {vector_size}")
