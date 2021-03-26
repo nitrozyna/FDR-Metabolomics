@@ -427,3 +427,8 @@
 
 ### 25 March 2021
 * *8 hours* Wrote parts of thesis: Passatutto experimentation section.
+
+### 26 March 2021
+* *1 hour* Meeting with supervisor, meetings notes.
+* *7 hours* Wrote parts of thesis: Passatutto experimentation section, dimensionality epxeriment, trianed models section.
+
