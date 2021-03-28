@@ -57,6 +57,7 @@ def get_hits(query_spec, library_spec, precursor_tol=1, metaKey='parent_mass', c
         pos2 = pos
         while pos2 < len(library_prec_list) and library_prec_list[pos2] < max_mz:
             pos2 += 1
+        # nothing in precursor range
         if pos == pos2:
             continue
         scores = []
