@@ -57,7 +57,7 @@ def get_hits(query_spec, library_spec, precursor_tol=1, metaKey='parent_mass', c
         pos2 = pos
         while pos2 < len(library_prec_list) and library_prec_list[pos2] < max_mz:
             pos2 += 1
-        if pos != pos2:
+        if pos == pos2:
             continue
         scores = []
         for l_idx in range(pos, pos2):
