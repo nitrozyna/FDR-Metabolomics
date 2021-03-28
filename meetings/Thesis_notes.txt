@@ -11,3 +11,5 @@
 
 
 you can add tree frag from Passatutto to the graphs
+
+try binning decimals 1 for everything
