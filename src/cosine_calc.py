@@ -10,8 +10,10 @@ Hit = namedtuple('Hit', ['query', 'target', 'score', 'hit'])
 
 
 def inchis_equal(s1, s2, spec2vec=False):
-    return getMeta(s1, spec2vec).get('inchikey_inchi', "").split("-")[0] == \
-           getMeta(s2, spec2vec).get('inchikey_inchi', "").split("-")[0]
+    meta1 = getMeta(s1, spec2vec)
+    meta2 = getMeta(s2, spec2vec)
+    return meta1.get('inchikey_inchi', meta1.get('inchi', '')).split("-")[0] == \
+           meta2.get('inchikey_inchi', meta2.get('inchi', '')).split("-")[0]
 
 
 def passatutto_inchis_equal(s1, s2, spec2vec=False):
