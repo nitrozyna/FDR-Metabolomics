@@ -1,6 +1,6 @@
 import os
 
-class PassatutoParser:
+class PassatuttoParser:
     name_overwrites = {
         "INCHI_AUX": "inchiaux",
         "SpectrumFile": "source_file",
@@ -55,10 +55,10 @@ class PassatutoParser:
             if verbose and i and not i % 100:
                 print( "processed %d files" % i )
         if verbose:
-            print( "Finished parsing of %d spectra " % i)
+            print( "Finished parsing of %d spectra " % (i+1))
         return spectrums
 
-class DecoyParserPassatuto:
+class DecoyParserPassattuto:
     name_overwrites = {
         "ACCESSION:": "source_file",
         "MS$FOCUSED_ION: PRECURSOR_M/Z": "precursor_mz",
@@ -117,5 +117,5 @@ class DecoyParserPassatuto:
             if verbose and i and not i % 100:
                 print( "processed %d files" % i )
         if verbose:
-            print( "Finished parsing of %d spectra " % i)
+            print( "Finished parsing of %d spectra " % (i+1))
         return spectrums
