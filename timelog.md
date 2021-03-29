@@ -432,3 +432,7 @@
 * *1 hour* Meeting with supervisor, meetings notes.
 * *7 hours* Wrote parts of thesis: Passatutto experimentation section, dimensionality epxeriment, trianed models section.
 
+### 28 March 2021
+* *6 hours* Rerunned all notebooks, restructured the directory to produce graphs for the paper
+* *3 hours* Tried to run the LC-MS pipeline with new knockoffs.
+* *2 hours* Repeated the dimensionality experiment with 1 n_decimals.
