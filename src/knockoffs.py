@@ -12,23 +12,24 @@ def is_pos_def(x):
 
 
 def generate_knockoffs(model, document_spectra, diagonal_matrix, n_components, intensity_weighting_power=0.5,
-                       allowed_missing_percentage=15):
+                       allowed_missing_percentage=15, embeddings=None):
     vector_size = model.vector_size
     print(f"Embedding vector size: {vector_size}")
 
-    embeddings_spec2vec_lib = np.zeros((len(document_spectra), vector_size), dtype="float")
-    for i, doc in enumerate(document_spectra):
-        embeddings_spec2vec_lib[i, 0:vector_size] = calc_vector(model, doc,
-                                                                intensity_weighting_power,
-                                                                allowed_missing_percentage)
+    if embeddings is None:
+        embeddings = np.zeros((len(document_spectra), vector_size), dtype="float")
+        for i, doc in enumerate(document_spectra):
+            embeddings[i, 0:vector_size] = calc_vector(model, doc,
+                                                       intensity_weighting_power,
+                                                       allowed_missing_percentage)
 
-    gm = GaussianMixture(n_components=n_components, covariance_type='diag').fit(embeddings_spec2vec_lib)
+    gm = GaussianMixture(n_components=n_components, covariance_type='diag').fit(embeddings)
 
-    n_dim = len(embeddings_spec2vec_lib[0])
+    n_dim = len(embeddings[0])
 
     all_knockoffs = []
     idxs = list(range(n_components))
-    for point in embeddings_spec2vec_lib:
+    for point in embeddings:
         component = np.random.choice(idxs, p=gm.predict_proba([point])[0])
         mu = gm.means_[component]
         cov = gm.covariances_[component]
@@ -50,7 +51,7 @@ def generate_knockoffs(model, document_spectra, diagonal_matrix, n_components, i
         all_knockoffs.append(ko)
 
     knockoff_documents = []
-    for ko, v, d in zip(all_knockoffs, embeddings_spec2vec_lib, document_spectra):
+    for ko, v, d in zip(all_knockoffs, embeddings, document_spectra):
         knockoff_doc = copy.deepcopy(d)
         knockoff_doc._obj.set('inchi', 'knockoff')
         knockoff_doc._obj.set('inchikey_inchi', 'knockoff')
