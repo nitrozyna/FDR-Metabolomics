@@ -419,6 +419,8 @@
 * *1 hour* Focused on analysis of the unfiltered Passatutto data.
 * *1 hour* Meeting with supervisor and updated meeting notes.
 
+## Week 22
+
 ### 23 March 2021
 * *6 hours* Wrote parts of thesis: organised knockoff text and started experimentation.
 
@@ -436,3 +438,12 @@
 * *6 hours* Rerunned all notebooks, restructured the directory to produce graphs for the paper
 * *3 hours* Tried to run the LC-MS pipeline with new knockoffs.
 * *2 hours* Repeated the dimensionality experiment with 1 n_decimals.
+
+## Week 23
+
+### 29 March 2021
+* *4 hours* Optimised embeddings by creating a new spec2vec_hit method to avoid repetitive embedding computation.
+* *2 hours* Tried to run the LC-MS pipeline with new knockoffs - the data turns out to be messy and additional preprocessing would be necessary.
+* *2 hours* Ran more dimensionality experiments, with differing min_match peaks.
+* *3 hours* Finalized the basic passatutto pipeline (in writing and notebooks)
+* *2 hours* Finalized the spec2vec passatutto pipeline, added knockoffs in writing.
