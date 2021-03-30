@@ -447,3 +447,7 @@
 * *2 hours* Ran more dimensionality experiments, with differing min_match peaks.
 * *3 hours* Finalized the basic passatutto pipeline (in writing and notebooks)
 * *2 hours* Finalized the spec2vec passatutto pipeline, added knockoffs in writing.
+
+### 30 March 2021
+* *3 hours* Finalised the Section describing Spec2Vec and cosine-based similarity scoring.
+* *2 hours* Finalised the Background/Introduction Section.
