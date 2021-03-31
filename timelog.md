@@ -454,3 +454,8 @@
 * *1 hour* Training the models to see final dimensions I want to use.
 * *3 hours* Tweaking the LC-MS data, it's really messy and that's why knockoffs don't perform well.
 * *3 hours* More writing: Finalised abstract and described a few more details in methods based on tweaking the dataset.
+
+### 31 March 2021
+* *3 hours* More writing: Finished up writing the LC-MS Experiment.
+* *3 hours* More writing: Page about dimension optimization without the descirption of the graph.
+
