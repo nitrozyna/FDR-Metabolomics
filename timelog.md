@@ -451,3 +451,6 @@
 ### 30 March 2021
 * *3 hours* Finalised the Section describing Spec2Vec and cosine-based similarity scoring.
 * *2 hours* Finalised the Background/Introduction Section.
+* *1 hour* Training the models to see final dimensions I want to use.
+* *3 hours* Tweaking the LC-MS data, it's really messy and that's why knockoffs don't perform well.
+* *3 hours* More writing: Finalised abstract and described a few more details in methods based on tweaking the dataset.
