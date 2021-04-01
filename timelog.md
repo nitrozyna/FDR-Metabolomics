@@ -248,8 +248,8 @@
 * *0.5 hour* Meeting with supervisor.
 
 ## Christmas break
-* *2 hour* Played with the knock-off technique sent by supervisor.
-* *1.5 hour* Started the notebook with creating knock-offs from spectra.
+* *2 hour* Played with the knockoff technique sent by supervisor.
+* *1.5 hour* Started the notebook with creating knockoffs from spectra.
 
 ## Week 13
 
