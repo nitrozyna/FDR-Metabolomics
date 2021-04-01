@@ -5,12 +5,12 @@ Accurate  metabolite  identification  from  liquid  chromatogra-phy  tandem  mas
 
 Here's an overview of the structure:
 
-* `timelog.md` The time log for the project
-* `plan.md` Week-by-week plan for the project 
-* `data/` Data acquired when running the experiments
-* `src/` source code for the project
-* `notebooks/` source code for the project
-* `status_report/` the status report submitted in December
-* `meetings/` Records of the meetings during the project
-* `dissertation/` project dissertation
-* `presentation/` presentation
+* `timelog.md` The time log for the project.
+* `plan.md` Week-by-week plan for the project. 
+* `data/` Data acquired when running the experiments.
+* `src/` Source code for the project.
+* `notebooks/` Source code for the project.
+* `status_report/` The status report submitted in December.
+* `meetings/` Records of the meetings during the project.
+* `dissertation/` Project dissertation.
+* `presentation/` Presentation.
