@@ -3,18 +3,9 @@
 Accurate  metabolite  identification  from  liquid  chromatogra-phy  tandem  mass  spectrometry  (LC–MS/MS)  is  a  difficultproblem that has been addressed by a few studies.  The mostcommon technique consists of matching fragment spectra toreference library spectra.  To be able to assess the quality ofthese  matches,  the  contemporary  methods  use  target-decoyapproaches  that  are  compatible  with  the  commonly  used  co-sine similarity scores while keeping the False Discovery Rate(FDR) under control.  Recently, there has been an advance-ment  in  definition  of  spectral  similarity  which  introducedan unsupervised machine learning technique, Spec2Vec, thathas  proven  more  successful  in  identification  of  metabolites.This  paper  improves  the  existing  target-decoy  methods  andintroduces  a  new  Gaussian  knockoff-based  method  native  toSpec2Vec embeddings
 
 
+Here's an overview of the structure:
 
-
-This is a suggested template for a project. You can modify it as you please, but
-but remember to keep:
-
-* a timelog, updated regularly in the `timelog.md` format;
-* all source under version control;
-* data well organised and with appropriate ethical approval (for human subject data);
-
-Here's an overview of the structure as it stands:
-
-* `timelog.md` The time log for your project.
+* `timelog.md` The time log for the project.
 * `plan.md` A skeleton week-by-week plan for the project. 
 * `data/` data you acquire during the project
 * `src/` source code for your project
