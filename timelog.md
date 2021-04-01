@@ -458,4 +458,5 @@
 ### 31 March 2021
 * *3 hours* More writing: Finished up writing the LC-MS Experiment.
 * *3 hours* More writing: Page about dimension optimization without the descirption of the graph.
-
+* *4 hours* Reread the entire thesis up to methods, applied corrections.
+* *3 hours* Tried to rerun all the experiments to do a more detailed grid-search to see if I the knockoff FDR can be improved.
