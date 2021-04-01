@@ -342,6 +342,8 @@
 
 ### 21 Feb 2021
 * *7 hours* Finished debugging knockoffs, figured out D is the most sensitive, changed to covariance type = diag, number of components is the same as number of dimensions.
+ 
+## Week 19
 
 ### 23 Feb 2021
 * *3 hours* Progressed on writing the thesis: knockoffs, Spec2Vec, some basic explanations of biological concepts.
@@ -362,7 +364,7 @@
 ### 28 Feb 2021
 * *0.5 hour* Exchanged several emails with other parties interested in the project.
 
-## Week 19
+## Week 20
 
 ### 1 March 2021
 * *2 hours* Progressed on writing thesis and the methods described by Scheubert et al.
@@ -381,7 +383,7 @@
 * *0.5 hour* Meeting with supervisor.
 * *4 hours* Wrote parts of the thesis about knockoffs.
 
-## Week 20
+## Week 21
 
 ### 9 March 2021
 * *3 hours* Wrote parts of the thesis: FDR, q-value calculation with references to mass spectra matches and decoys.
@@ -404,7 +406,7 @@
 ### 14 March 2021
 * *8 hours* Fixed knockoffs for LC-MS, still struggling with GC-MS.
 
-## Week 21
+## Week 22
 
 ### 15 March 2021
 * *5 hours* More thesis writing: knockoffs.
@@ -419,7 +421,7 @@
 * *1 hour* Focused on analysis of the unfiltered Passatutto data.
 * *1 hour* Meeting with supervisor and updated meeting notes.
 
-## Week 22
+## Week 23
 
 ### 23 March 2021
 * *6 hours* Wrote parts of thesis: organised knockoff text and started experimentation.
@@ -439,7 +441,7 @@
 * *3 hours* Tried to run the LC-MS pipeline with new knockoffs.
 * *2 hours* Repeated the dimensionality experiment with 1 n_decimals.
 
-## Week 23
+## Week 24
 
 ### 29 March 2021
 * *4 hours* Optimised embeddings by creating a new spec2vec_hit method to avoid repetitive embedding computation.
