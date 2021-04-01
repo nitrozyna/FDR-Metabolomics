@@ -462,3 +462,9 @@
 * *3 hours* More writing: Page about dimension optimization without the descirption of the graph.
 * *4 hours* Reread the entire thesis up to methods, applied corrections.
 * *3 hours* Tried to rerun all the experiments to do a more detailed grid-search to see if I the knockoff FDR can be improved.
+
+### 1 April 2021
+* *4 hours* More writing: Descibed results for LC-MS datasets.
+* *2 hours* More writing: Described results for the GC-MS dataset.
+* *6 hours* Placed thesis in latex (created formulas and references)
+* *2 hours* Wrote Conclusions.
