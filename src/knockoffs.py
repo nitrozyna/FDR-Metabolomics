@@ -42,12 +42,10 @@ def generate_knockoffs(model, document_spectra, diagonal_matrix, n_components, i
 
         assert is_pos_def(joint_cov), "Joint covariance matrix has to be positive definite"
 
-        A = np.eye(n_dim) - np.dot(D, np.linalg.inv(Sigma))
-        kmu = np.dot(np.dot(D, np.linalg.inv(Sigma)), mu)
-        B = np.dot(A, point.T)
-        kmu += B
-        kSigma = 2 * D - np.dot(np.dot(D, np.linalg.inv(Sigma)), D)
-        ko = np.random.multivariate_normal(kmu.flatten(), kSigma, 1)
+        A = np.dot(D, np.linalg.inv(Sigma)) # Helper subclause to avoid repetition
+        kmu = np.dot(A, mu) + np.dot(np.eye(n_dim) - A, point.T)
+        kSigma = 2 * D - np.dot(A, D)
+        ko = np.random.multivariate_normal(kmu.flatten(), kSigma, 1)        
         all_knockoffs.append(ko)
 
     knockoff_documents = []
