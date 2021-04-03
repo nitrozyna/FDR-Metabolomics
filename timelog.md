@@ -468,3 +468,11 @@
 * *2 hours* More writing: Described results for the GC-MS dataset.
 * *6 hours* Placed thesis in latex (created formulas and references)
 * *2 hours* Wrote Conclusions.
+
+### 2 April 2021
+* *1 hour* Meeting with supervisor, meeting notes.
+
+### 3 April 2021
+
+
+
