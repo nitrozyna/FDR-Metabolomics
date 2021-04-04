@@ -473,6 +473,7 @@
 * *1 hour* Meeting with supervisor, meeting notes.
 
 ### 3 April 2021
+* *2 hours* Applied a couple of corrections in the paper suggested by the supervisor.
 
 
 
