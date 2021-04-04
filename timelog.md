@@ -475,5 +475,6 @@
 ### 3 April 2021
 * *2 hours* Applied a couple of corrections in the paper suggested by the supervisor.
 
-
+### 4 April 2021
+* *8 hours* Applied more corrections in the paper suggested by the supervisor: explained mass spectrum, target, query, provided a couple of figures.
 
