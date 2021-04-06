@@ -481,3 +481,7 @@
 ### 5 April 2021
 * *8 hours* Provided more information in the introduction given supervisor's comments. Included two additional spectrum figures and a Gaussian distribution figure.
 * *4 hours* Applied corrections to the other parts of the paper including figure captions and details highlighted by the supervisor. 
+
+### 6 April 2021
+* *2 hours* Created a new figure representing the Gaussian density function.
+* *3 hours* Reread the report and applied last corrections. Added the FDR threshold calculation.
