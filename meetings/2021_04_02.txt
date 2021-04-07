@@ -1,3 +1,7 @@
+Simon's comments on the draft
+
+Before describing the sections, talk about data, what a spectrum is, don't care about preprocessing, describe query, define target, section about what the data is
+
 vast majority of the metabolite that exist, we don't have a structure.
 
 Talk more about FDR,challenges-spectral databases are small, even when comparing to a database we have no idea.
@@ -7,11 +11,6 @@ State the problem, the main process and key challenges, talk more about knockoff
 
 Aim
 Summarise the problems that are mention in the introduction.
-
-
-Simon's comments on the draft
-
-Before describing the sections, talk about data, what a spectrum is, don't care about preprocessing, describe query, define target, section about what the data is
 
 Section 2.2 should be: Metbaolite identification instead
 Talk about query-database and definiton of a hit, only then talk about Cosine.
@@ -32,7 +31,7 @@ With Scheubert state you use their dataset in 5.1.
 
 Figure 1. 75 dimensions for Spec2Vec.
 
-Figure 2. Mention recreation (swich empochs to iteration or the other wayaround).
+Figure 2. Mention recreation (switch epochs to iteration or the other way around).
 
 Figure 3. Put lines from figure 2 and 3 together and why 3 is better.
 
@@ -43,6 +42,5 @@ Users are going to accept hits that are of FDR < 5% score threshold.
 Find a score theshold that keeps you at 5 % FDR, what range do I get to.
 
 Run 10 times, variability of the FDR threshohold.
-
 
 Figure 6 fix the caption and add the cummulative number of spectra or add a separate histogram.
