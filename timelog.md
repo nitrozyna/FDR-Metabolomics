@@ -485,3 +485,7 @@
 ### 6 April 2021
 * *2 hours* Created a new figure representing the Gaussian density function.
 * *3 hours* Reread the report and applied last corrections. Added the FDR threshold calculation.
+
+### 7 April 2021
+* *3 hours* Reread the report again and applied more corrections.
+
