@@ -468,3 +468,24 @@
 * *2 hours* More writing: Described results for the GC-MS dataset.
 * *6 hours* Placed thesis in latex (created formulas and references)
 * *2 hours* Wrote Conclusions.
+
+### 2 April 2021
+* *1 hour* Meeting with supervisor, meeting notes.
+
+### 3 April 2021
+* *2 hours* Applied a couple of corrections in the paper suggested by the supervisor.
+
+### 4 April 2021
+* *8 hours* Applied more corrections in the paper suggested by the supervisor: explained mass spectrum, target, query, provided a couple of figures.
+
+### 5 April 2021
+* *8 hours* Provided more information in the introduction given supervisor's comments. Included two additional spectrum figures and a Gaussian distribution figure.
+* *4 hours* Applied corrections to the other parts of the paper including figure captions and details highlighted by the supervisor. 
+
+### 6 April 2021
+* *2 hours* Created a new figure representing the Gaussian density function.
+* *3 hours* Reread the report and applied last corrections. Added the FDR threshold calculation.
+
+### 7 April 2021
+* *3 hours* Reread the report again and applied more corrections.
+
