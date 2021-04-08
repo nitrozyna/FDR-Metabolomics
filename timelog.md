@@ -488,4 +488,10 @@
 
 ### 7 April 2021
 * *3 hours* Reread the report again and applied more corrections.
+* *4 hours* Added quantitative measures (table) to represent the plots better and described it more.
+* *1 hours* Reread the paper and changed the lc-ms graph since the table from above required rerunning some parts of the experiment.
+
+### 8 April 2021
+* *2 hours* Applied corrections to the mass spec part after consultation with a mass spec specialist.
+* *3 hours* Reread the report again and applied more corrections.
 
