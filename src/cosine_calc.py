@@ -104,9 +104,9 @@ def get_hits(query_spec, library_spec, precursor_tol=1, metaKey='parent_mass', c
         scores = []
         for l_idx in range(pos, pos2):
             l = library_spec[l_idx]
-            score, match_count = cosine.pair(q, l)
+            score, match_count = cosine.pair(q, l).item()
             if score != score:
-                print('got nan for', q.get('compound_name'))
+                print('got nan for', q.get('compound_name'), l.get('compound_name'))
                 continue
             if match_count >= min_match_count:
                 scores.append((score, l))

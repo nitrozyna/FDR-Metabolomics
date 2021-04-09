@@ -13,3 +13,14 @@
 you can add tree frag from Passatutto to the graphs
 
 try binning decimals 1 for everything
+
+
+
+LAST TO DOS:
+
+- add the dimension optimisation notebook
+- search repo for string Honza fdr-new
+- relative import instead of absolute import
+- check for plagiarisms
+- correct a few suggestion from Marija/Borja
+- install the repo on Sweetie's laptop
