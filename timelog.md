@@ -484,7 +484,7 @@
 
 ### 6 April 2021
 * *2 hours* Created a new figure representing the Gaussian density function.
-* *3 hours* Reread the report and applied last corrections. Added the FDR threshold calculation.
+* *4 hours* Reread the report and applied last corrections. Added the FDR threshold calculation.
 
 ### 7 April 2021
 * *3 hours* Reread the report again and applied more corrections.
@@ -492,6 +492,9 @@
 * *1 hours* Reread the paper and changed the lc-ms graph since the table from above required rerunning some parts of the experiment.
 
 ### 8 April 2021
-* *2 hours* Applied corrections to the mass spec part after consultation with a mass spec specialist.
+* *3 hours* Applied corrections to the mass spec part after consultation with a mass spec specialist.
 * *3 hours* Reread the report again and applied more corrections.
+* *3 hours* Applied corrections from a couple more readers.
 
+### 9 April 2021
+* *3 hours* Refactored dimension_optim and reran, same for the lc-ms notebook.
