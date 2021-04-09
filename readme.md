@@ -12,6 +12,9 @@ Note that Anaconda is a requirement because when using Spec2Vec, only Anaconda i
 ### Create an Anaconda environment
 ```conda create -n fdr-metabolomics python=3.8```
 
+### Activate the Anaconda environment
+```conda activate fdr-metabolomics```
+
 ### Clone the project
 ```git clone https://github.com/nitrozyna/FDR-Metabolomics.git```
 
