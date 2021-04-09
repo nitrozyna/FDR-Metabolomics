@@ -1,5 +1,0 @@
-notebook==6.1.4
-gensim ==3.8.0
-scikit-learn==0.23.2
-matchms=0.8.2
-spec2vec==0.3.1
