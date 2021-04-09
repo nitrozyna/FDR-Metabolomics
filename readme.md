@@ -18,8 +18,11 @@ Note that Anaconda is a requirement because when using Spec2Vec, only Anaconda i
 ### Clone the project
 ```git clone https://github.com/nitrozyna/FDR-Metabolomics.git```
 
+and change the directory 
+```cd FDR-Metabolomics```
+
 ### Install the dependencies
-```conda install -c nlesc --file requirements.txt```
+```conda install -c nlesc spec2vec```
 
 ## An overview of the repository structure
 
