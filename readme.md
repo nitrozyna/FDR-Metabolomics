@@ -6,18 +6,18 @@ Accurate metabolite identification from liquid chromatography tandem mass spectr
 ## Installation 
 Prerequisites:
 [Anaconda Cloud](https://docs.anaconda.com/anaconda/install/)
-Notat that Anaconda is a requirement because when using Spec2Vec, only Anaconda install will make sure that a [RDKit package](https://rdkit.org/) is installed properly. The '''pip''' version of installing Spec2Vec does not guarantee this package will work properly.
+No that that Anaconda is a requirement because when using Spec2Vec, only Anaconda install will make sure that a [RDKit package](https://rdkit.org/) is installed properly. The '''pip''' version of installing Spec2Vec does not guarantee this package will work properly.
 
 ### Create an Anaconda environment
-conda create -n fdr-metabolomics python=3.8
+'''conda create -n fdr-metabolomics python=3.8'''
 
 ### Clone the project
-git clone https://github.com/nitrozyna/FDR-Metabolomics.git
+'''git clone https://github.com/nitrozyna/FDR-Metabolomics.git'''
 
 ### Install the dependencies
-pip install -r requirements.txt
+'''conda install --file requirements.tx'''
 
-Here's an overview of the structure:
+## An overview of the repository structure
 
 * `timelog.md` The time log for the project.
 * `plan.md` Week-by-week plan for the project. 
