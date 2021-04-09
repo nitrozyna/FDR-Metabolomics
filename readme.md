@@ -22,7 +22,7 @@ and change the directory
 ```cd FDR-Metabolomics```
 
 ### Install the dependencies
-```conda install -c nlesc --file requirements.txt```
+```conda install -c nlesc spec2vec```
 
 ## An overview of the repository structure
 
