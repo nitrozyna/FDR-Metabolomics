@@ -5,7 +5,8 @@ Accurate metabolite identification from liquid chromatography tandem mass spectr
 
 ## Installation 
 Prerequisites:
-[Anaconda Cloud](https://docs.anaconda.com/anaconda/install/)
+[Anaconda](https://docs.anaconda.com/anaconda/install/)
+
 No that that Anaconda is a requirement because when using Spec2Vec, only Anaconda install will make sure that a [RDKit package](https://rdkit.org/) is installed properly. The ```pip``` version of installing Spec2Vec does not guarantee this package will work properly.
 
 ### Create an Anaconda environment
