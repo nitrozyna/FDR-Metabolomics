@@ -14,3 +14,17 @@ Here's an overview of the structure:
 * `meetings/` Records of the meetings during the project.
 * `dissertation/` Project dissertation.
 * `presentation/` Presentation.
+
+
+## Installation 
+Prerequisites:
+[Anaconda Cloud](https://docs.anaconda.com/anaconda/install/)
+
+### Create an Anaconda environment
+conda create -n fdr-metabolomics python=3.8
+
+### Clone the project
+git clone https://github.com/nitrozyna/FDR-Metabolomics.git
+
+### Install the dependencies
+pip install -r requirements.txt
