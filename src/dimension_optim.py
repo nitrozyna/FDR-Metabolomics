@@ -21,14 +21,14 @@ spectrums_query = []
 
 
 def init(query_size=1000, min_identical_matches=1, spec2vec_decimal_places=2,
-         folder_name='C:\\Users\\Honza\\Documents'):
+         folder_name='C:\\Users\\Gosia\\Desktop'):
     global documents_query
     global documents_lib
     global spectrums_lib
     global spectrums_query
 
     spec_with_precursor = load_from_json(
-        r'C:\Users\Honza\Documents\gnps_positive_ionmode_cleaned_by_matchms_and_lookups.json')
+        r'C:\Users\Gosia\Desktop\gnps_positive_ionmode_cleaned_by_matchms_and_lookups.json')
     # apply post processing steps to the data
     spec_with_precursor = [post_process(s) for s in spec_with_precursor if s.metadata.get('inchikey')]
     # omit spectrums that didn't qualify for analysis
